@@ -63,8 +63,6 @@ namespace IHunger.Service
         {
             Expression<Func<CategoryRestaurant, bool>> filter = null;
             Func<IQueryable<CategoryRestaurant>, IOrderedQueryable<CategoryRestaurant>> ordeBy = null;
-            int? skip = null;
-            int? take = 25;
 
             if (!string.IsNullOrWhiteSpace(CategoryRestaurantFilter.Name))
             {
@@ -125,26 +123,14 @@ namespace IHunger.Service
                 filter = filter.And(x => x.Id == CategoryRestaurantFilter.Id);
             }
 
-            if (CategoryRestaurantFilter.PageIndex != null)
-            {
-                if (CategoryRestaurantFilter.PageIndex > 1)
-                {
-                    skip = CategoryRestaurantFilter.PageIndex * 25;
-                }
-            }
-
-            if (CategoryRestaurantFilter.PageSize != null)
-            {
-                if (CategoryRestaurantFilter.PageSize > 0)
-                {
-                    take = CategoryRestaurantFilter.PageSize;
-                }
-            }
-
             return await _unitOfWork
                 .RepositoryFactory
                 .CategoryRestaurantRepository
-                .Search(filter, ordeBy, skip, take);
+                .Search(
+                    filter, 
+                    ordeBy, 
+                    CategoryRestaurantFilter.PageSize,
+                    CategoryRestaurantFilter.PageIndex);
         }
 
         public async Task<CategoryRestaurant> GetById(Guid id)

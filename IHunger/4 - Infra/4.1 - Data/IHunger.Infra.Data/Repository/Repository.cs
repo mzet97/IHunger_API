@@ -16,11 +16,13 @@ namespace IHunger.Infra.Data.Repository
     {
         protected readonly DataIdentityDbContext Db;
         protected readonly DbSet<TEntity> DbSet;
+        protected int Count;
 
         protected Repository(DataIdentityDbContext db)
         {
             Db = db;
             DbSet = db.Set<TEntity>();
+            Count = DbSet.AsQueryable().Count();
         }
 
         public async Task Add(TEntity entity)
@@ -60,29 +62,39 @@ namespace IHunger.Infra.Data.Repository
         public virtual async Task<List<TEntity>> Search(
             Expression<Func<TEntity, bool>> predicate = null,
             Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
-            int? skip = null,
-            int? take = null)
+            int? pageSize = null,
+            int? pageIndex = null)
         {
             var query = DbSet.AsQueryable();
+            Count = query.Count();
+            int pages = 0;
             
             if (predicate != null)
             {
                 query = query.Where(predicate);
             }
 
-            if (skip != null && skip.HasValue)
+            if(pageSize != null && pageSize.HasValue && pageSize > 0)
             {
-                query = query.Skip(skip.Value);
-            }
+                pages = Count / pageSize.Value;
 
-            if (take != null && take.HasValue)
-            {
-                query = query.Take(take.Value);
-            }
+                if(pageIndex != null && pageIndex.HasValue && pageIndex.Value > 0)
+                {
+                    if(pageIndex.Value > pages)
+                    {
+                        query = query.OrderBy(x => x.Id).Skip(pageSize.Value * pages).Take(pageSize.Value);
+                    }
+                    else
+                    {
+                        query = query.OrderBy(x => x.Id).Skip(pageSize.Value * pageIndex.Value).Take(pageSize.Value);
+                    }
+                    
+                }
+                else
+                {
+                    query = query.OrderBy(x => x.Id).Skip(pageSize.Value);
+                }
 
-            if(take != null && take.HasValue && skip != null && skip.HasValue)
-            {
-                query = query.Skip(skip.Value).Take(take.Value);
             }
 
             if (orderBy != null)

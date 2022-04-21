@@ -61,8 +61,6 @@ namespace IHunger.Service
         {
             Expression<Func<CategoryProduct, bool>> filter = null;
             Func<IQueryable<CategoryProduct>, IOrderedQueryable<CategoryProduct>> ordeBy = null;
-            int? skip = null;
-            int? take = 25;
 
             if (!string.IsNullOrWhiteSpace(categoryProductFilter.Name))
             {
@@ -126,33 +124,14 @@ namespace IHunger.Service
                 filter = filter.And(x => x.Id == categoryProductFilter.Id);
             }
 
-            if (categoryProductFilter.PageIndex != null)
-            {
-                if(categoryProductFilter.PageIndex > 1)
-                {
-                    if(categoryProductFilter.PageSize > 0)
-                    {
-                        skip = categoryProductFilter.PageIndex * categoryProductFilter.PageSize;
-                    }
-                    else
-                    {
-                        skip = categoryProductFilter.PageIndex * 10;
-                    }
-                }
-            }
-
-            if (categoryProductFilter.PageSize != null)
-            {
-                if (categoryProductFilter.PageSize > 0)
-                {
-                    take = categoryProductFilter.PageSize;
-                }
-            }
-
             return await _unitOfWork
                 .RepositoryFactory
                 .CategoryProductRepository
-                .Search(filter, ordeBy, skip, take);
+                .Search(
+                    filter, 
+                    ordeBy,
+                    categoryProductFilter.PageSize,
+                    categoryProductFilter.PageIndex);
         }
 
         public async Task<CategoryProduct> GetById(Guid id)

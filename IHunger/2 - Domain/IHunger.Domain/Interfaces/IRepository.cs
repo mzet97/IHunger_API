@@ -19,8 +19,8 @@ namespace IHunger.Domain.Interfaces
         Task<List<TEntity>> Search(
             Expression<Func<TEntity, bool>> predicate = null,
             Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
-            int? skip = null,
-            int? take = null);
+            int? pageSize = null,
+            int? index = null);
         Task<int> SaveChanges();
     }
 }

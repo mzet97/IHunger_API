@@ -1,0 +1,485 @@
+2022-04-20T19:55:58.3184185-03:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development. (4007092b)
+2022-04-20T19:55:58.6403186-03:00  [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-20T19:55:59.3603073-03:00  [INF] Executed DbCommand ("138"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2022-04-20T19:55:59.6576092-03:00  [INF] Executed DbCommand ("59"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE \"__EFMigrationsHistory\" (
+    \"MigrationId\" character varying(150) NOT NULL,
+    \"ProductVersion\" character varying(32) NOT NULL,
+    CONSTRAINT \"PK___EFMigrationsHistory\" PRIMARY KEY (\"MigrationId\")
+);" (0723d8ff)
+2022-04-20T19:56:00.1711119-03:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2022-04-20T19:56:00.1758645-03:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2022-04-20T19:56:01.6211395-03:00  [INF] Applying migration '"20211125113632_Start"'. (0e2ac64d)
+2022-04-20T19:56:01.7150035-03:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AddressRestaurants\" (
+    \"Id\" uuid NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    \"Street\" varchar(80) NOT NULL,
+    \"District\" varchar(80) NOT NULL,
+    \"City\" varchar(80) NOT NULL,
+    \"County\" varchar(80) NOT NULL,
+    \"ZipCode\" varchar(15) NOT NULL,
+    \"Latitude\" varchar(80) NULL,
+    \"Longitude\" varchar(80) NULL,
+    CONSTRAINT \"PK_AddressRestaurants\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2022-04-20T19:56:02.9055934-03:00  [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AddressUsers\" (
+    \"Id\" uuid NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    \"Street\" varchar(80) NOT NULL,
+    \"District\" varchar(80) NOT NULL,
+    \"City\" varchar(80) NOT NULL,
+    \"County\" varchar(80) NOT NULL,
+    \"ZipCode\" varchar(15) NOT NULL,
+    \"Latitude\" varchar(80) NULL,
+    \"Longitude\" varchar(80) NULL,
+    CONSTRAINT \"PK_AddressUsers\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2022-04-20T19:56:04.4664131-03:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AspNetRoles\" (
+    \"Id\" uuid NOT NULL,
+    \"Name\" character varying(256) NULL,
+    \"NormalizedName\" character varying(256) NULL,
+    \"ConcurrencyStamp\" text NULL,
+    CONSTRAINT \"PK_AspNetRoles\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2022-04-20T19:56:04.4745960-03:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"CategoryProducts\" (
+    \"Id\" uuid NOT NULL,
+    \"Name\" varchar(50) NOT NULL,
+    \"Description\" varchar(200) NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_CategoryProducts\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2022-04-20T19:56:06.5244497-03:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"CategoryRestaurants\" (
+    \"Id\" uuid NOT NULL,
+    \"Name\" varchar(50) NOT NULL,
+    \"Description\" varchar(200) NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_CategoryRestaurants\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2022-04-20T19:56:06.5333741-03:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"Coupons\" (
+    \"Id\" uuid NOT NULL,
+    \"Code\" varchar(50) NOT NULL,
+    \"Value\" integer NOT NULL,
+    \"ExpireAt\" timestamp with time zone NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_Coupons\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2022-04-20T19:56:08.2374054-03:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"OrdersStatus\" (
+    \"Id\" uuid NOT NULL,
+    \"Name\" varchar(200) NOT NULL,
+    \"Number\" integer NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_OrdersStatus\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2022-04-20T19:56:10.1222556-03:00  [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"ProfileUsers\" (
+    \"Id\" uuid NOT NULL,
+    \"Name\" varchar(80) NOT NULL,
+    \"LastName\" varchar(80) NOT NULL,
+    \"BirthDate\" timestamp with time zone NULL,
+    \"Type\" integer NOT NULL,
+    \"IdAddressUser\" uuid NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_ProfileUsers\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_ProfileUsers_AddressUsers_IdAddressUser\" FOREIGN KEY (\"IdAddressUser\") REFERENCES public.\"AddressUsers\" (\"Id\")
+);" (0723d8ff)
+2022-04-20T19:56:11.9638688-03:00  [INF] Executed DbCommand ("1,841"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AspNetRoleClaims\" (
+    \"Id\" integer GENERATED BY DEFAULT AS IDENTITY,
+    \"RoleId\" uuid NOT NULL,
+    \"ClaimType\" text NULL,
+    \"ClaimValue\" text NULL,
+    CONSTRAINT \"PK_AspNetRoleClaims\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_AspNetRoleClaims_AspNetRoles_RoleId\" FOREIGN KEY (\"RoleId\") REFERENCES public.\"AspNetRoles\" (\"Id\") ON DELETE CASCADE
+);" (0723d8ff)
+2022-04-20T19:56:11.9703055-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"Restaurant\" (
+    \"Id\" uuid NOT NULL,
+    \"Name\" varchar(50) NOT NULL,
+    \"Description\" varchar(200) NOT NULL,
+    \"Image\" varchar(100) NOT NULL,
+    \"IdCategoryRestaurant\" uuid NOT NULL,
+    \"IdAddressRestaurant\" uuid NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_Restaurant\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_Restaurant_AddressRestaurants_IdAddressRestaurant\" FOREIGN KEY (\"IdAddressRestaurant\") REFERENCES public.\"AddressRestaurants\" (\"Id\"),
+    CONSTRAINT \"FK_Restaurant_CategoryRestaurants_IdCategoryRestaurant\" FOREIGN KEY (\"IdCategoryRestaurant\") REFERENCES public.\"CategoryRestaurants\" (\"Id\")
+);" (0723d8ff)
+2022-04-20T19:56:13.7084262-03:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AspNetUsers\" (
+    \"Id\" uuid NOT NULL,
+    \"IdProfileUser\" uuid NOT NULL,
+    \"UserName\" character varying(256) NULL,
+    \"NormalizedUserName\" character varying(256) NULL,
+    \"Email\" character varying(256) NULL,
+    \"NormalizedEmail\" character varying(256) NULL,
+    \"EmailConfirmed\" boolean NOT NULL,
+    \"PasswordHash\" text NULL,
+    \"SecurityStamp\" text NULL,
+    \"ConcurrencyStamp\" text NULL,
+    \"PhoneNumber\" text NULL,
+    \"PhoneNumberConfirmed\" boolean NOT NULL,
+    \"TwoFactorEnabled\" boolean NOT NULL,
+    \"LockoutEnd\" timestamp with time zone NULL,
+    \"LockoutEnabled\" boolean NOT NULL,
+    \"AccessFailedCount\" integer NOT NULL,
+    CONSTRAINT \"PK_AspNetUsers\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_AspNetUsers_ProfileUsers_IdProfileUser\" FOREIGN KEY (\"IdProfileUser\") REFERENCES public.\"ProfileUsers\" (\"Id\")
+);" (0723d8ff)
+2022-04-20T19:56:16.7490234-03:00  [INF] Executed DbCommand ("1,765"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"Orders\" (
+    \"Id\" uuid NOT NULL,
+    \"Price\" DECIMAL NOT NULL,
+    \"OrderStatus\" integer NOT NULL,
+    \"IdCoupon\" uuid NULL,
+    \"IdProfileUser\" uuid NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_Orders\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_Orders_Coupons_IdCoupon\" FOREIGN KEY (\"IdCoupon\") REFERENCES public.\"Coupons\" (\"Id\"),
+    CONSTRAINT \"FK_Orders_ProfileUsers_IdProfileUser\" FOREIGN KEY (\"IdProfileUser\") REFERENCES public.\"ProfileUsers\" (\"Id\")
+);" (0723d8ff)
+2022-04-20T19:56:16.7580756-03:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"Comment\" (
+    \"Id\" uuid NOT NULL,
+    \"Text\" varchar(200) NOT NULL,
+    \"Starts\" DECIMAL NOT NULL,
+    \"IdRestaurant\" uuid NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_Comment\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_Comment_Restaurant_IdRestaurant\" FOREIGN KEY (\"IdRestaurant\") REFERENCES public.\"Restaurant\" (\"Id\")
+);" (0723d8ff)
+2022-04-20T19:56:18.6182471-03:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"Products\" (
+    \"Id\" uuid NOT NULL,
+    \"Name\" varchar(50) NOT NULL,
+    \"Description\" varchar(200) NOT NULL,
+    \"Price\" DECIMAL NOT NULL,
+    \"Vegan\" boolean NOT NULL,
+    \"Vegetarian\" boolean NOT NULL,
+    \"Kosher\" boolean NOT NULL,
+    \"Image\" varchar(100) NOT NULL,
+    \"IdCategoryProduct\" uuid NOT NULL,
+    \"IdRestaurant\" uuid NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_Products\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_Products_CategoryProducts_IdCategoryProduct\" FOREIGN KEY (\"IdCategoryProduct\") REFERENCES public.\"CategoryProducts\" (\"Id\"),
+    CONSTRAINT \"FK_Products_Restaurant_IdRestaurant\" FOREIGN KEY (\"IdRestaurant\") REFERENCES public.\"Restaurant\" (\"Id\")
+);" (0723d8ff)
+2022-04-20T19:56:20.0614238-03:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AspNetUserClaims\" (
+    \"Id\" integer GENERATED BY DEFAULT AS IDENTITY,
+    \"UserId\" uuid NOT NULL,
+    \"ClaimType\" text NULL,
+    \"ClaimValue\" text NULL,
+    CONSTRAINT \"PK_AspNetUserClaims\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_AspNetUserClaims_AspNetUsers_UserId\" FOREIGN KEY (\"UserId\") REFERENCES public.\"AspNetUsers\" (\"Id\") ON DELETE CASCADE
+);" (0723d8ff)
+2022-04-20T19:56:21.5624141-03:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AspNetUserLogins\" (
+    \"LoginProvider\" character varying(128) NOT NULL,
+    \"ProviderKey\" character varying(128) NOT NULL,
+    \"ProviderDisplayName\" text NULL,
+    \"UserId\" uuid NOT NULL,
+    CONSTRAINT \"PK_AspNetUserLogins\" PRIMARY KEY (\"LoginProvider\", \"ProviderKey\"),
+    CONSTRAINT \"FK_AspNetUserLogins_AspNetUsers_UserId\" FOREIGN KEY (\"UserId\") REFERENCES public.\"AspNetUsers\" (\"Id\") ON DELETE CASCADE
+);" (0723d8ff)
+2022-04-20T19:56:23.3920600-03:00  [INF] Executed DbCommand ("1,829"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AspNetUserRoles\" (
+    \"UserId\" uuid NOT NULL,
+    \"RoleId\" uuid NOT NULL,
+    CONSTRAINT \"PK_AspNetUserRoles\" PRIMARY KEY (\"UserId\", \"RoleId\"),
+    CONSTRAINT \"FK_AspNetUserRoles_AspNetRoles_RoleId\" FOREIGN KEY (\"RoleId\") REFERENCES public.\"AspNetRoles\" (\"Id\") ON DELETE CASCADE,
+    CONSTRAINT \"FK_AspNetUserRoles_AspNetUsers_UserId\" FOREIGN KEY (\"UserId\") REFERENCES public.\"AspNetUsers\" (\"Id\") ON DELETE CASCADE
+);" (0723d8ff)
+2022-04-20T19:56:23.4003252-03:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AspNetUserTokens\" (
+    \"UserId\" uuid NOT NULL,
+    \"LoginProvider\" character varying(128) NOT NULL,
+    \"Name\" character varying(128) NOT NULL,
+    \"Value\" text NULL,
+    CONSTRAINT \"PK_AspNetUserTokens\" PRIMARY KEY (\"UserId\", \"LoginProvider\", \"Name\"),
+    CONSTRAINT \"FK_AspNetUserTokens_AspNetUsers_UserId\" FOREIGN KEY (\"UserId\") REFERENCES public.\"AspNetUsers\" (\"Id\") ON DELETE CASCADE
+);" (0723d8ff)
+2022-04-20T19:56:24.9968448-03:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"Itens\" (
+    \"Id\" uuid NOT NULL,
+    \"Price\" DECIMAL NOT NULL,
+    \"Quantity\" integer NOT NULL,
+    \"IdProduct\" uuid NOT NULL,
+    \"IdOrder\" uuid NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_Itens\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_Itens_Orders_IdOrder\" FOREIGN KEY (\"IdOrder\") REFERENCES public.\"Orders\" (\"Id\"),
+    CONSTRAINT \"FK_Itens_Products_IdProduct\" FOREIGN KEY (\"IdProduct\") REFERENCES public.\"Products\" (\"Id\")
+);" (0723d8ff)
+2022-04-20T19:56:26.2403713-03:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_AspNetRoleClaims_RoleId\" ON public.\"AspNetRoleClaims\" (\"RoleId\");" (0723d8ff)
+2022-04-20T19:56:26.2446960-03:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE UNIQUE INDEX \"RoleNameIndex\" ON public.\"AspNetRoles\" (\"NormalizedName\");" (0723d8ff)
+2022-04-20T19:56:27.8691623-03:00  [INF] Executed DbCommand ("1,624"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_AspNetUserClaims_UserId\" ON public.\"AspNetUserClaims\" (\"UserId\");" (0723d8ff)
+2022-04-20T19:56:27.8727037-03:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_AspNetUserLogins_UserId\" ON public.\"AspNetUserLogins\" (\"UserId\");" (0723d8ff)
+2022-04-20T19:56:27.8765080-03:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_AspNetUserRoles_RoleId\" ON public.\"AspNetUserRoles\" (\"RoleId\");" (0723d8ff)
+2022-04-20T19:56:29.3320695-03:00  [INF] Executed DbCommand ("1,455"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"EmailIndex\" ON public.\"AspNetUsers\" (\"NormalizedEmail\");" (0723d8ff)
+2022-04-20T19:56:29.3368534-03:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_AspNetUsers_IdProfileUser\" ON public.\"AspNetUsers\" (\"IdProfileUser\");" (0723d8ff)
+2022-04-20T19:56:29.3416585-03:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE UNIQUE INDEX \"UserNameIndex\" ON public.\"AspNetUsers\" (\"NormalizedUserName\");" (0723d8ff)
+2022-04-20T19:56:30.5610394-03:00  [INF] Executed DbCommand ("1,219"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Comment_IdRestaurant\" ON public.\"Comment\" (\"IdRestaurant\");" (0723d8ff)
+2022-04-20T19:56:30.5661057-03:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Itens_IdOrder\" ON public.\"Itens\" (\"IdOrder\");" (0723d8ff)
+2022-04-20T19:56:30.5699849-03:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Itens_IdProduct\" ON public.\"Itens\" (\"IdProduct\");" (0723d8ff)
+2022-04-20T19:56:30.5734142-03:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Orders_IdCoupon\" ON public.\"Orders\" (\"IdCoupon\");" (0723d8ff)
+2022-04-20T19:56:31.8068464-03:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Orders_IdProfileUser\" ON public.\"Orders\" (\"IdProfileUser\");" (0723d8ff)
+2022-04-20T19:56:31.8106641-03:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Products_IdCategoryProduct\" ON public.\"Products\" (\"IdCategoryProduct\");" (0723d8ff)
+2022-04-20T19:56:31.8142894-03:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Products_IdRestaurant\" ON public.\"Products\" (\"IdRestaurant\");" (0723d8ff)
+2022-04-20T19:56:33.0740740-03:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_ProfileUsers_IdAddressUser\" ON public.\"ProfileUsers\" (\"IdAddressUser\");" (0723d8ff)
+2022-04-20T19:56:33.0780113-03:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Restaurant_IdAddressRestaurant\" ON public.\"Restaurant\" (\"IdAddressRestaurant\");" (0723d8ff)
+2022-04-20T19:56:33.0817080-03:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Restaurant_IdCategoryRestaurant\" ON public.\"Restaurant\" (\"IdCategoryRestaurant\");" (0723d8ff)
+2022-04-20T19:58:37.1962414-03:00  [INF] User profile is available. Using '"C:\Users\mathe\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2022-04-20T19:58:37.8520628-03:00  [INF] Creating key {0e0cef56-d3ea-47f9-aa95-a95b39e628a1} with creation date 2022-04-20 22:58:37Z, activation date 2022-04-20 22:58:37Z, and expiration date 2022-07-19 22:58:37Z. (77afce94)
+2022-04-20T19:58:37.8962362-03:00  [INF] Writing data to file '"C:\Users\mathe\AppData\Local\ASP.NET\DataProtection-Keys\key-0e0cef56-d3ea-47f9-aa95-a95b39e628a1.xml"'. (da22a8b1)
+2022-04-20T19:58:40.5831456-03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-20T19:58:40.5902072-03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-20T19:58:40.5971776-03:00  [INF] Content root path: "D:\TI\git\v2\IHunger_API\IHunger\1 - Application\IHunger.WebAPI" (b5d60022)
+2022-04-20T19:58:40.7800797-03:00 40000002-000f-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger - - (ca22a1cb)
+2022-04-20T19:58:40.9303840-03:00 40000002-000f-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+dnt: 1
+upgrade-insecure-requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-20T19:58:42.7594859-03:00 40000002-000f-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 301
+X-MiniProfiler-Ids: [Redacted]
+Location: swagger/index.html (999214c4)
+2022-04-20T19:58:42.9058844-03:00 40000002-000f-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger - - - 301 - - 2145.3861ms (791a596a)
+2022-04-20T19:58:42.9238288-03:00 40000002-0009-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/index.html - - (ca22a1cb)
+2022-04-20T19:58:42.9321607-03:00 40000002-0009-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/index.html
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+upgrade-insecure-requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted] (893de8da)
+2022-04-20T19:58:43.5044518-03:00 40000002-0009-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: text/html;charset=utf-8 (999214c4)
+2022-04-20T19:58:43.5081439-03:00 40000002-0009-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/index.html - - - 200 - text/html;charset=utf-8 584.3953ms (791a596a)
+2022-04-20T19:58:43.6111317-03:00 40000002-0005-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/swagger-ui.css - - (ca22a1cb)
+2022-04-20T19:58:43.6231285-03:00 40000002-0005-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/swagger-ui.css
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-20T19:58:43.6665901-03:00 40000002-0005-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2022-04-20T19:58:43.6780036-03:00 40000002-0005-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: text/css
+Last-Modified: Sat, 16 Oct 2021 12:54:30 GMT
+ETag: [Redacted]
+Accept-Ranges: bytes
+Content-Length: 143632 (999214c4)
+2022-04-20T19:58:43.6859732-03:00 40000002-0005-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/swagger-ui.css - - - 200 143632 text/css 74.7485ms (791a596a)
+2022-04-20T19:58:44.3191922-03:00 40000004-000f-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/swagger-ui-bundle.js - - (ca22a1cb)
+2022-04-20T19:58:44.3291886-03:00 40000004-000f-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/swagger-ui-bundle.js
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-20T19:58:44.3480767-03:00 40000004-000f-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"' (27b0a520)
+2022-04-20T19:58:44.3582662-03:00 40000004-000f-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/javascript
+Last-Modified: Sat, 16 Oct 2021 12:54:30 GMT
+ETag: [Redacted]
+Accept-Ranges: bytes
+Content-Length: 1092889 (999214c4)
+2022-04-20T19:58:44.4044462-03:00 40000002-000f-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/swagger-ui-standalone-preset.js - - (ca22a1cb)
+2022-04-20T19:58:44.4173597-03:00 40000002-000f-fe00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/swagger-ui-standalone-preset.js
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-20T19:58:44.4232790-03:00 40000002-000b-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2022-04-20T19:58:44.4363109-03:00 40000002-000b-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 12.6585ms (791a596a)
+2022-04-20T19:58:44.4369363-03:00 40000002-000f-fe00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"' (27b0a520)
+2022-04-20T19:58:44.4554703-03:00 40000002-000f-fe00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/javascript
+Last-Modified: Sat, 16 Oct 2021 12:54:30 GMT
+ETag: [Redacted]
+Accept-Ranges: bytes
+Content-Length: 337162 (999214c4)
+2022-04-20T19:58:44.4921612-03:00 40000002-000f-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 82.3150ms (791a596a)
+2022-04-20T19:58:44.5071512-03:00 40000004-000f-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 187.8113ms (791a596a)
+2022-04-20T19:58:45.5546962-03:00 40000004-000b-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/v1/swagger.json - - (ca22a1cb)
+2022-04-20T19:58:45.5600010-03:00 40000004-000b-fd00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/v1/swagger.json
+Accept: application/json,*/*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-20T19:58:45.6507949-03:00 40000002-0000-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/favicon-32x32.png - - (ca22a1cb)
+2022-04-20T19:58:45.6559144-03:00 40000002-0000-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/favicon-32x32.png
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-20T19:58:45.6579475-03:00 40000002-0000-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2022-04-20T19:58:45.6647950-03:00 40000002-0000-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: image/png
+Last-Modified: Sat, 16 Oct 2021 12:54:30 GMT
+ETag: [Redacted]
+Accept-Ranges: bytes
+Content-Length: 628 (999214c4)
+2022-04-20T19:58:45.6651598-03:00 40000002-0000-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/favicon-32x32.png - - - 200 628 image/png 14.3213ms (791a596a)
+2022-04-20T19:58:45.8280232-03:00 40000004-000b-fd00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json;charset=utf-8 (999214c4)
+2022-04-20T19:58:45.8303552-03:00 40000004-000b-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 275.6609ms (791a596a)

@@ -48,26 +48,41 @@ namespace IHunger.Infra.Data.Repository
         public override async Task<List<Product>> Search(
             Expression<Func<Product, bool>> predicate = null,
             Func<IQueryable<Product>, IOrderedQueryable<Product>> orderBy = null,
-            int? skip = null,
-            int? take = null)
+            int? pageSize = null,
+            int? index = null)
         {
             var query = DbSet.AsQueryable();
-
-            // extract to method
             query = query.Include(x => x.Restaurant).Include(x => x.CategoryProduct);
+            Count = query.Count();
+            
+            int pages = 0;
+
             if (predicate != null)
             {
                 query = query.Where(predicate);
             }
 
-            if (skip != null && skip.HasValue)
+            if (pageSize != null && pageSize.HasValue && pageSize > 0)
             {
-                query = query.Skip(skip.Value);
-            }
+                pages = Count / pageSize.Value;
 
-            if (take != null && take.HasValue)
-            {
-                query = query.Take(take.Value);
+                if (index != null && index.HasValue && index.Value > 0)
+                {
+                    if (index.Value > pages)
+                    {
+                        query = query.OrderBy(x => x.Id).Skip(pageSize.Value * pages).Take(pageSize.Value);
+                    }
+                    else
+                    {
+                        query = query.OrderBy(x => x.Id).Skip(pageSize.Value * index.Value).Take(pageSize.Value);
+                    }
+
+                }
+                else
+                {
+                    query = query.OrderBy(x => x.Id).Skip(pageSize.Value);
+                }
+
             }
 
             if (orderBy != null)

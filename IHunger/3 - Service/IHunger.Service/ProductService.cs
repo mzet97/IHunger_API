@@ -65,8 +65,6 @@ namespace IHunger.Service
         {
             Expression<Func<Product, bool>> filter = null;
             Func<IQueryable<Product>, IOrderedQueryable<Product>> ordeBy = null;
-            int? skip = null;
-            int? take = 25;
 
             if (!string.IsNullOrWhiteSpace(productFilter.Name))
             {
@@ -158,22 +156,6 @@ namespace IHunger.Service
                 filter = filter.And(x => x.Id == productFilter.Id);
             }
 
-            if (productFilter.PageIndex != null)
-            {
-                if (productFilter.PageIndex > 1)
-                {
-                    skip = productFilter.PageIndex * 25;
-                }
-            }
-
-            if (productFilter.PageSize != null)
-            {
-                if (productFilter.PageSize > 0)
-                {
-                    take = productFilter.PageSize;
-                }
-            }
-
             if (!string.IsNullOrWhiteSpace(productFilter.Order))
             {
                 switch (productFilter.Order)
@@ -202,8 +184,8 @@ namespace IHunger.Service
                 .Search(
                     filter,
                     ordeBy,
-                    skip,
-                    take);
+                    productFilter.PageSize,
+                    productFilter.PageIndex);
         }
 
         public async Task<Product> GetById(Guid id)
