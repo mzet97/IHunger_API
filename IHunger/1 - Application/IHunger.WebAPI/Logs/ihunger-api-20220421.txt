@@ -2163,3 +2163,1510 @@ Content-Type: application/json; charset=utf-8
 Content-Length: 2675
 api-supported-versions: [Redacted] (999214c4)
 2022-04-21T12:22:28.3558279-03:00 40000008-000a-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/api/v1/category-products?PageIndex=1&PageSize=16 - - - 200 2675 application/json;+charset=utf-8 39.7274ms (791a596a)
+2022-04-21T12:25:16.9570916-03:00  [INF] User profile is available. Using '"C:\Users\mathe\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2022-04-21T12:25:17.6939695-03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-04-21T12:25:17.6969733-03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-04-21T12:25:17.6996674-03:00  [INF] Content root path: "D:\TI\git\v2\IHunger_API\IHunger\1 - Application\IHunger.WebAPI" (b5d60022)
+2022-04-21T12:25:17.7299166-03:00 40000002-0007-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/index.html - - (ca22a1cb)
+2022-04-21T12:25:17.7670685-03:00 40000002-0007-fd00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/index.html
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+upgrade-insecure-requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted] (893de8da)
+2022-04-21T12:25:18.1899573-03:00 40000002-0007-fd00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: text/html;charset=utf-8 (999214c4)
+2022-04-21T12:25:18.2008382-03:00 40000002-0007-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/index.html - - - 200 - text/html;charset=utf-8 476.6618ms (791a596a)
+2022-04-21T12:25:18.5179123-03:00 40000008-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2022-04-21T12:25:18.5250823-03:00 40000008-0002-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 4.6289ms (791a596a)
+2022-04-21T12:25:18.9693597-03:00 40000005-0005-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/v1/swagger.json - - (ca22a1cb)
+2022-04-21T12:25:18.9741953-03:00 40000005-0005-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/v1/swagger.json
+Accept: application/json,*/*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:25:19.2354618-03:00 40000005-0005-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json;charset=utf-8 (999214c4)
+2022-04-21T12:25:19.2372959-03:00 40000005-0005-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 267.9796ms (791a596a)
+2022-04-21T12:29:19.7063058-03:00 40000004-0009-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 OPTIONS https://localhost:44372/api/v1/auth/login - - (ca22a1cb)
+2022-04-21T12:29:19.7102864-03:00 40000004-0009-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/login
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+access-control-request-method: [Redacted]
+access-control-request-headers: [Redacted]
+origin: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:29:19.7247417-03:00 40000004-0009-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:29:19.7293808-03:00 40000004-0009-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 204
+X-MiniProfiler-Ids: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted] (999214c4)
+2022-04-21T12:29:19.7302199-03:00 40000004-0009-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 OPTIONS https://localhost:44372/api/v1/auth/login - - - 204 - - 24.0172ms (791a596a)
+2022-04-21T12:29:19.7529200-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/auth/login application/json 50 (ca22a1cb)
+2022-04-21T12:29:19.7563248-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/login
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Content-Length: 50
+Content-Type: application/json
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:29:19.7567047-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:29:19.7901680-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:29:19.8385956-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"Login\", controller = \"Auth\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(IHunger.WebAPI.ViewModels.User.LoginUserViewModel)" on controller "IHunger.WebAPI.V1.Controllers.AuthController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:29:20.3203688-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:29:21.2305802-03:00 40000008-0000-fd00-b63f-84710c7967bb [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development. (4007092b)
+2022-04-21T12:29:21.5110493-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:29:22.3575462-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("129"ms) [Parameters=["@__normalizedUserName_0='ADMIN@ADMIN.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2022-04-21T12:29:22.6204020-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("12"ms) [Parameters=["@__user_Id_0='f6a186c7-b4b7-4330-8e1b-4ccfbe3843ad'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ClaimType\", a.\"ClaimValue\", a.\"UserId\"
+FROM public.\"AspNetUserClaims\" AS a
+WHERE a.\"UserId\" = @__user_Id_0" (0723d8ff)
+2022-04-21T12:29:22.6923043-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@__userId_0='f6a186c7-b4b7-4330-8e1b-4ccfbe3843ad'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM public.\"AspNetUserRoles\" AS a
+INNER JOIN public.\"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @__userId_0" (0723d8ff)
+2022-04-21T12:29:22.7110470-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2022-04-21T12:29:22.7342032-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@__normalizedEmail_0='ADMIN@ADMIN.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2022-04-21T12:29:22.7494230-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='f6a186c7-b4b7-4330-8e1b-4ccfbe3843ad'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ClaimType\", a.\"ClaimValue\", a.\"UserId\"
+FROM public.\"AspNetUserClaims\" AS a
+WHERE a.\"UserId\" = @__user_Id_0" (0723d8ff)
+2022-04-21T12:29:22.7625120-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='f6a186c7-b4b7-4330-8e1b-4ccfbe3843ad'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM public.\"AspNetUserRoles\" AS a
+INNER JOIN public.\"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @__userId_0" (0723d8ff)
+2022-04-21T12:29:22.9150301-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"ProfileUsers\" AS p" (0723d8ff)
+2022-04-21T12:29:22.9566247-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='1e4152fa-08e8-4143-942f-0e31ad4cea96'"], CommandType='Text', CommandTimeout='30']"
+""SELECT p.\"Id\", p.\"BirthDate\", p.\"CreatedAt\", p.\"IdAddressUser\", p.\"LastName\", p.\"Name\", p.\"Type\", p.\"UpdatedAt\", a.\"Id\", a.\"City\", a.\"County\", a.\"CreatedAt\", a.\"District\", a.\"Latitude\", a.\"Longitude\", a.\"Street\", a.\"UpdatedAt\", a.\"ZipCode\"
+FROM public.\"ProfileUsers\" AS p
+INNER JOIN public.\"AddressUsers\" AS a ON p.\"IdAddressUser\" = a.\"Id\"
+WHERE p.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2022-04-21T12:29:22.9731373-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2647.7805ms. (50a9e262)
+2022-04-21T12:29:22.9852052-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (605b4265)
+2022-04-21T12:29:23.0684076-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)" in 3222.4397ms (afa2e885)
+2022-04-21T12:29:23.0692864-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:29:23.0732796-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Set-Cookie: [Redacted]
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 3019
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:29:23.0850926-03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/auth/login application/json 50 - 200 3019 application/json;+charset=utf-8 3332.1874ms (791a596a)
+2022-04-21T12:29:23.3326010-03:00 40000002-000c-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 OPTIONS https://localhost:44372/api/v1/category-restaurants - - (ca22a1cb)
+2022-04-21T12:29:23.3396629-03:00 40000002-000c-fe00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+access-control-request-method: [Redacted]
+access-control-request-headers: [Redacted]
+origin: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:29:23.3398656-03:00 40000002-000c-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:29:23.3438820-03:00 40000008-000f-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 OPTIONS https://localhost:44372/api/v1/restaurants - - (ca22a1cb)
+2022-04-21T12:29:23.3458114-03:00 40000002-000c-fe00-b63f-84710c7967bb [INF] Response:
+StatusCode: 204
+X-MiniProfiler-Ids: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted] (999214c4)
+2022-04-21T12:29:23.3478153-03:00 40000002-000c-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 OPTIONS https://localhost:44372/api/v1/category-restaurants - - - 204 - - 15.1849ms (791a596a)
+2022-04-21T12:29:23.3505164-03:00 40000008-000f-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/restaurants
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+access-control-request-method: [Redacted]
+access-control-request-headers: [Redacted]
+origin: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:29:23.3507153-03:00 40000008-000f-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:29:23.3550905-03:00 40000008-000f-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 204
+X-MiniProfiler-Ids: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted] (999214c4)
+2022-04-21T12:29:23.3554105-03:00 40000008-000f-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 OPTIONS https://localhost:44372/api/v1/restaurants - - - 204 - - 11.6123ms (791a596a)
+2022-04-21T12:29:23.3737844-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/api/v1/restaurants - - (ca22a1cb)
+2022-04-21T12:29:23.3738626-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/api/v1/category-restaurants - - (ca22a1cb)
+2022-04-21T12:29:23.3783929-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/restaurants
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:29:23.3786092-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:29:23.3801337-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:29:23.3802997-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:29:23.4762601-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:29:23.4762601-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:29:23.4878261-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllWithFilter\", controller = \"CategoryRestaurant\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantViewModel]] GetAllWithFilter(IHunger.Infra.CrossCutting.Filters.CategoryRestaurantFilter)" on controller "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:29:23.4993894-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllWithFilter\", controller = \"Restaurant\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[IHunger.WebAPI.ViewModels.Restaurant.RestaurantViewModel]] GetAllWithFilter(IHunger.Infra.CrossCutting.Filters.RestaurantFilter)" on controller "IHunger.WebAPI.V1.Controllers.RestaurantController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:29:23.7222711-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:29:23.7222710-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:29:23.7896571-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:29:23.7896571-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:29:23.8016107-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:29:23.8159681-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:29:23.8656972-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\"
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:29:23.8744063-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"Restaurant\" AS r" (0723d8ff)
+2022-04-21T12:29:23.8887771-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"Restaurant\" AS r" (0723d8ff)
+2022-04-21T12:29:23.8999044-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 177.4606ms. (50a9e262)
+2022-04-21T12:29:23.9006378-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantViewModel, IHunger.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-04-21T12:29:23.9058784-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)" in 417.9419ms (afa2e885)
+2022-04-21T12:29:23.9059615-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:29:23.9102218-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:29:23.9109379-03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/api/v1/category-restaurants - - - 200 2 application/json;+charset=utf-8 537.1038ms (791a596a)
+2022-04-21T12:29:23.9763169-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT r.\"Id\", r.\"CreatedAt\", r.\"Description\", r.\"IdAddressRestaurant\", r.\"IdCategoryRestaurant\", r.\"Image\", r.\"Name\", r.\"UpdatedAt\", a.\"Id\", a.\"City\", a.\"County\", a.\"CreatedAt\", a.\"District\", a.\"Latitude\", a.\"Longitude\", a.\"Street\", a.\"UpdatedAt\", a.\"ZipCode\", c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\", c0.\"Id\", c0.\"CreatedAt\", c0.\"IdRestaurant\", c0.\"Starts\", c0.\"Text\", c0.\"UpdatedAt\"
+FROM public.\"Restaurant\" AS r
+INNER JOIN public.\"AddressRestaurants\" AS a ON r.\"IdAddressRestaurant\" = a.\"Id\"
+INNER JOIN public.\"CategoryRestaurants\" AS c ON r.\"IdCategoryRestaurant\" = c.\"Id\"
+LEFT JOIN public.\"Comment\" AS c0 ON r.\"Id\" = c0.\"IdRestaurant\"
+ORDER BY r.\"Id\", a.\"Id\", c.\"Id\"" (0723d8ff)
+2022-04-21T12:29:23.9882067-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 265.8247ms. (50a9e262)
+2022-04-21T12:29:23.9885178-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[IHunger.WebAPI.ViewModels.Restaurant.RestaurantViewModel, IHunger.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-04-21T12:29:23.9906318-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)" in 491.155ms (afa2e885)
+2022-04-21T12:29:23.9907373-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:29:23.9944033-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:29:23.9948596-03:00 40000004-0003-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/api/v1/restaurants - - - 200 2 application/json;+charset=utf-8 621.0633ms (791a596a)
+2022-04-21T12:30:34.7633093-03:00 40000002-000a-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 58 (ca22a1cb)
+2022-04-21T12:30:34.7666171-03:00 40000002-000a-fd00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: text/plain
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Content-Length: 58
+Content-Type: application/json-patch+json
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:30:34.7673657-03:00 40000002-000a-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:30:34.7773157-03:00 40000002-000a-fd00-b63f-84710c7967bb [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (92d7f7d3)
+2022-04-21T12:30:34.7810861-03:00 40000002-000a-fd00-b63f-84710c7967bb [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2022-04-21T12:30:34.7847039-03:00 40000002-000a-fd00-b63f-84710c7967bb [INF] Response:
+StatusCode: 401
+X-MiniProfiler-Ids: [Redacted]
+WWW-Authenticate: [Redacted] (999214c4)
+2022-04-21T12:30:34.7861807-03:00 40000002-000a-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 58 - 401 - - 22.9081ms (791a596a)
+2022-04-21T12:30:46.7069600-03:00 4000000a-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 66 (ca22a1cb)
+2022-04-21T12:30:46.7102078-03:00 4000000a-0000-fd00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: text/plain
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Content-Length: 66
+Content-Type: application/json-patch+json
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:30:46.7103674-03:00 4000000a-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:30:46.7107235-03:00 4000000a-0000-fd00-b63f-84710c7967bb [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (92d7f7d3)
+2022-04-21T12:30:46.7108851-03:00 4000000a-0000-fd00-b63f-84710c7967bb [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2022-04-21T12:30:46.7144237-03:00 4000000a-0000-fd00-b63f-84710c7967bb [INF] Response:
+StatusCode: 401
+X-MiniProfiler-Ids: [Redacted]
+WWW-Authenticate: [Redacted] (999214c4)
+2022-04-21T12:30:46.7151994-03:00 4000000a-0000-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 66 - 401 - - 8.2358ms (791a596a)
+2022-04-21T12:30:56.4510447-03:00 40000004-0007-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 62 (ca22a1cb)
+2022-04-21T12:30:56.4541492-03:00 40000004-0007-fd00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: text/plain
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Content-Length: 62
+Content-Type: application/json-patch+json
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:30:56.4543896-03:00 40000004-0007-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:30:56.4546707-03:00 40000004-0007-fd00-b63f-84710c7967bb [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (92d7f7d3)
+2022-04-21T12:30:56.4547181-03:00 40000004-0007-fd00-b63f-84710c7967bb [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2022-04-21T12:30:56.4578336-03:00 40000004-0007-fd00-b63f-84710c7967bb [INF] Response:
+StatusCode: 401
+X-MiniProfiler-Ids: [Redacted]
+WWW-Authenticate: [Redacted] (999214c4)
+2022-04-21T12:30:56.4585226-03:00 40000004-0007-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 62 - 401 - - 7.4832ms (791a596a)
+2022-04-21T12:31:11.6431419-03:00 40000004-0002-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 64 (ca22a1cb)
+2022-04-21T12:31:11.6460543-03:00 40000004-0002-fe00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: text/plain
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Content-Length: 64
+Content-Type: application/json-patch+json
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:31:11.6461900-03:00 40000004-0002-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:31:11.6463588-03:00 40000004-0002-fe00-b63f-84710c7967bb [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (92d7f7d3)
+2022-04-21T12:31:11.6463959-03:00 40000004-0002-fe00-b63f-84710c7967bb [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2022-04-21T12:31:11.6495720-03:00 40000004-0002-fe00-b63f-84710c7967bb [INF] Response:
+StatusCode: 401
+X-MiniProfiler-Ids: [Redacted]
+WWW-Authenticate: [Redacted] (999214c4)
+2022-04-21T12:31:11.6501914-03:00 40000004-0002-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 64 - 401 - - 7.5310ms (791a596a)
+2022-04-21T12:31:28.9013550-03:00 4000000c-0004-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 64 (ca22a1cb)
+2022-04-21T12:31:28.9045566-03:00 4000000c-0004-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: text/plain
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Content-Length: 64
+Content-Type: application/json-patch+json
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:31:28.9052808-03:00 4000000c-0004-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:31:28.9055049-03:00 4000000c-0004-ff00-b63f-84710c7967bb [INF] Authorization failed. "These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user." (92d7f7d3)
+2022-04-21T12:31:28.9055400-03:00 4000000c-0004-ff00-b63f-84710c7967bb [INF] AuthenticationScheme: "Bearer" was challenged. (d45f1f38)
+2022-04-21T12:31:28.9089404-03:00 4000000c-0004-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 401
+X-MiniProfiler-Ids: [Redacted]
+WWW-Authenticate: [Redacted] (999214c4)
+2022-04-21T12:31:28.9096847-03:00 4000000c-0004-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 64 - 401 - - 8.3131ms (791a596a)
+2022-04-21T12:31:53.8156727-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/auth/login application/json-patch+json 59 (ca22a1cb)
+2022-04-21T12:31:53.8188117-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/login
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Content-Length: 59
+Content-Type: application/json-patch+json
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:31:53.8190447-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:31:53.8199180-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:31:53.8201962-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"Login\", controller = \"Auth\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(IHunger.WebAPI.ViewModels.User.LoginUserViewModel)" on controller "IHunger.WebAPI.V1.Controllers.AuthController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:31:53.8515363-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:31:53.8736145-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:31:53.8909062-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@__normalizedUserName_0='ADMIN@ADMIN.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2022-04-21T12:31:53.9141471-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@__user_Id_0='f6a186c7-b4b7-4330-8e1b-4ccfbe3843ad'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ClaimType\", a.\"ClaimValue\", a.\"UserId\"
+FROM public.\"AspNetUserClaims\" AS a
+WHERE a.\"UserId\" = @__user_Id_0" (0723d8ff)
+2022-04-21T12:31:53.9335114-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@__userId_0='f6a186c7-b4b7-4330-8e1b-4ccfbe3843ad'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM public.\"AspNetUserRoles\" AS a
+INNER JOIN public.\"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @__userId_0" (0723d8ff)
+2022-04-21T12:31:53.9361269-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2022-04-21T12:31:53.9469459-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@__normalizedEmail_0='ADMIN@ADMIN.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2022-04-21T12:31:53.9556453-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='f6a186c7-b4b7-4330-8e1b-4ccfbe3843ad'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ClaimType\", a.\"ClaimValue\", a.\"UserId\"
+FROM public.\"AspNetUserClaims\" AS a
+WHERE a.\"UserId\" = @__user_Id_0" (0723d8ff)
+2022-04-21T12:31:53.9676290-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='f6a186c7-b4b7-4330-8e1b-4ccfbe3843ad'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM public.\"AspNetUserRoles\" AS a
+INNER JOIN public.\"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @__userId_0" (0723d8ff)
+2022-04-21T12:31:53.9762133-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"ProfileUsers\" AS p" (0723d8ff)
+2022-04-21T12:31:53.9863597-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='1e4152fa-08e8-4143-942f-0e31ad4cea96'"], CommandType='Text', CommandTimeout='30']"
+""SELECT p.\"Id\", p.\"BirthDate\", p.\"CreatedAt\", p.\"IdAddressUser\", p.\"LastName\", p.\"Name\", p.\"Type\", p.\"UpdatedAt\", a.\"Id\", a.\"City\", a.\"County\", a.\"CreatedAt\", a.\"District\", a.\"Latitude\", a.\"Longitude\", a.\"Street\", a.\"UpdatedAt\", a.\"ZipCode\"
+FROM public.\"ProfileUsers\" AS p
+INNER JOIN public.\"AddressUsers\" AS a ON p.\"IdAddressUser\" = a.\"Id\"
+WHERE p.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2022-04-21T12:31:53.9877572-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 136.1534ms. (50a9e262)
+2022-04-21T12:31:53.9880353-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (605b4265)
+2022-04-21T12:31:53.9891518-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)" in 168.9117ms (afa2e885)
+2022-04-21T12:31:53.9892204-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:31:53.9930145-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Set-Cookie: [Redacted]
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 3019
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:31:53.9934079-03:00 40000006-0007-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/auth/login application/json-patch+json 59 - 200 3019 application/json;+charset=utf-8 177.7274ms (791a596a)
+2022-04-21T12:32:17.2090079-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 58 (ca22a1cb)
+2022-04-21T12:32:17.2125837-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: text/plain
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Content-Length: 58
+Content-Type: application/json-patch+json
+Cookie: [Redacted]
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:32:17.2129492-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:32:17.2143261-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:32:17.2193028-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Create\", controller = \"CategoryRestaurant\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantViewModel]] Create(IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantCreatedViewModel)" on controller "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:32:17.2249495-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:32:17.2626606-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:32:17.2704325-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:32:17.2774028-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:32:17.2927577-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@__categoryRestaurant_Name_0='Asian'"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\"
+FROM public.\"CategoryRestaurants\" AS c
+WHERE c.\"Name\" = @__categoryRestaurant_Name_0" (0723d8ff)
+2022-04-21T12:32:17.4504992-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("13"ms) [Parameters=["@p0='79c9cb64-d84e-4f6c-8ce7-402f1f971703', @p1='2022-04-21T12:32:17.3524101-03:00' (DbType = DateTime), @p2='Asian restaurant' (Nullable = false), @p3='Asian' (Nullable = false), @p4='2022-04-21T12:32:17.3563581-03:00' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"CategoryRestaurants\" (\"Id\", \"CreatedAt\", \"Description\", \"Name\", \"UpdatedAt\")
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2022-04-21T12:32:17.4871342-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 262.0917ms. (50a9e262)
+2022-04-21T12:32:17.4883107-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (605b4265)
+2022-04-21T12:32:17.4914542-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)" in 272.0722ms (afa2e885)
+2022-04-21T12:32:17.4915383-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:32:17.4954374-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 213
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:32:17.4959155-03:00 40000009-0005-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 58 - 200 213 application/json;+charset=utf-8 286.9849ms (791a596a)
+2022-04-21T12:32:29.0961796-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 66 (ca22a1cb)
+2022-04-21T12:32:29.0999821-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: text/plain
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Content-Length: 66
+Content-Type: application/json-patch+json
+Cookie: [Redacted]
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:32:29.1002016-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:32:29.1011964-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:32:29.1013574-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"Create\", controller = \"CategoryRestaurant\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantViewModel]] Create(IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantCreatedViewModel)" on controller "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:32:29.1043975-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:32:29.1053770-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:32:29.1125275-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:32:29.1204942-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:32:29.1304878-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__categoryRestaurant_Name_0='Brazilian'"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\"
+FROM public.\"CategoryRestaurants\" AS c
+WHERE c.\"Name\" = @__categoryRestaurant_Name_0" (0723d8ff)
+2022-04-21T12:32:29.1488236-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=["@p0='05fa1d26-7690-4315-b823-5571b58a36b7', @p1='2022-04-21T12:32:29.1373940-03:00' (DbType = DateTime), @p2='Brazilian restaurant' (Nullable = false), @p3='Brazilian' (Nullable = false), @p4='2022-04-21T12:32:29.1374029-03:00' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"CategoryRestaurants\" (\"Id\", \"CreatedAt\", \"Description\", \"Name\", \"UpdatedAt\")
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2022-04-21T12:32:29.1609315-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 56.4672ms. (50a9e262)
+2022-04-21T12:32:29.1612742-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (605b4265)
+2022-04-21T12:32:29.1622104-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)" in 60.7924ms (afa2e885)
+2022-04-21T12:32:29.1622964-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:32:29.1660944-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 220
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:32:29.1664833-03:00 40000006-0002-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 66 - 200 220 application/json;+charset=utf-8 70.5953ms (791a596a)
+2022-04-21T12:32:39.3147154-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 62 (ca22a1cb)
+2022-04-21T12:32:39.3188374-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: text/plain
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Content-Length: 62
+Content-Type: application/json-patch+json
+Cookie: [Redacted]
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:32:39.3195842-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:32:39.3201026-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:32:39.3202493-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Create\", controller = \"CategoryRestaurant\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantViewModel]] Create(IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantCreatedViewModel)" on controller "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:32:39.3207001-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:32:39.3211512-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:32:39.3276503-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:32:39.3353552-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:32:39.3527028-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@__categoryRestaurant_Name_0='Italian'"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\"
+FROM public.\"CategoryRestaurants\" AS c
+WHERE c.\"Name\" = @__categoryRestaurant_Name_0" (0723d8ff)
+2022-04-21T12:32:39.3680147-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='99d17437-0a2a-431b-be04-9720f08ec2d4', @p1='2022-04-21T12:32:39.3578174-03:00' (DbType = DateTime), @p2='Italian restaurant' (Nullable = false), @p3='Italian' (Nullable = false), @p4='2022-04-21T12:32:39.3578269-03:00' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"CategoryRestaurants\" (\"Id\", \"CreatedAt\", \"Description\", \"Name\", \"UpdatedAt\")
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2022-04-21T12:32:39.3794280-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 58.6706ms. (50a9e262)
+2022-04-21T12:32:39.3796953-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (605b4265)
+2022-04-21T12:32:39.3803382-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)" in 60.0562ms (afa2e885)
+2022-04-21T12:32:39.3803948-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:32:39.3842041-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 217
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:32:39.3847256-03:00 40000006-000a-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 62 - 200 217 application/json;+charset=utf-8 69.9660ms (791a596a)
+2022-04-21T12:32:47.2239231-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 62 (ca22a1cb)
+2022-04-21T12:32:47.2285685-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: text/plain
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Content-Length: 62
+Content-Type: application/json-patch+json
+Cookie: [Redacted]
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:32:47.2287901-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:32:47.2293846-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:32:47.2295187-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Create\", controller = \"CategoryRestaurant\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantViewModel]] Create(IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantCreatedViewModel)" on controller "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:32:47.2301548-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:32:47.2306580-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:32:47.2410610-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:32:47.2518347-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:32:47.2634163-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__categoryRestaurant_Name_0='Mexican'"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\"
+FROM public.\"CategoryRestaurants\" AS c
+WHERE c.\"Name\" = @__categoryRestaurant_Name_0" (0723d8ff)
+2022-04-21T12:32:47.2804295-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='a95ce4ca-5e30-47a0-a71b-160a68f42d49', @p1='2022-04-21T12:32:47.2700428-03:00' (DbType = DateTime), @p2='Mexican restaurant' (Nullable = false), @p3='Mexican' (Nullable = false), @p4='2022-04-21T12:32:47.2700526-03:00' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"CategoryRestaurants\" (\"Id\", \"CreatedAt\", \"Description\", \"Name\", \"UpdatedAt\")
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2022-04-21T12:32:47.2848207-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 54.579ms. (50a9e262)
+2022-04-21T12:32:47.2851938-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (605b4265)
+2022-04-21T12:32:47.2861441-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)" in 56.5391ms (afa2e885)
+2022-04-21T12:32:47.2862568-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.Create (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:32:47.2903267-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 217
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:32:47.2907071-03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/category-restaurants application/json-patch+json 62 - 200 217 application/json;+charset=utf-8 66.7739ms (791a596a)
+2022-04-21T12:32:55.8466173-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/api/v1/category-restaurants - - (ca22a1cb)
+2022-04-21T12:32:55.8542712-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: text/plain
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Cookie: [Redacted]
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:32:55.8556716-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:32:55.8558897-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllWithFilter\", controller = \"CategoryRestaurant\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantViewModel]] GetAllWithFilter(IHunger.Infra.CrossCutting.Filters.CategoryRestaurantFilter)" on controller "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:32:55.8568076-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:32:55.8574085-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:32:55.8651282-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:32:55.8749829-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:32:55.8850494-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\"
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:32:55.8922749-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 35.3754ms. (50a9e262)
+2022-04-21T12:32:55.8925611-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantViewModel, IHunger.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-04-21T12:32:55.8934720-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)" in 37.5127ms (afa2e885)
+2022-04-21T12:32:55.8935725-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:32:55.8975662-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 768
+api-supported-versions: [Redacted] (999214c4)
+2022-04-21T12:32:55.8979420-03:00 4000000b-0005-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/api/v1/category-restaurants - - - 200 768 application/json;+charset=utf-8 51.4375ms (791a596a)
+2022-04-21T12:33:03.0259982-03:00 40000003-0008-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 OPTIONS https://localhost:44372/api/v1/category-restaurants - - (ca22a1cb)
+2022-04-21T12:33:03.0312773-03:00 40000003-0008-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+access-control-request-method: [Redacted]
+access-control-request-headers: [Redacted]
+origin: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:33:03.0334836-03:00 40000003-0008-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:33:03.0411932-03:00 4000000c-0000-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 OPTIONS https://localhost:44372/api/v1/restaurants - - (ca22a1cb)
+2022-04-21T12:33:03.0475039-03:00 40000003-0008-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 204
+X-MiniProfiler-Ids: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted] (999214c4)
+2022-04-21T12:33:03.0478638-03:00 40000003-0008-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 OPTIONS https://localhost:44372/api/v1/category-restaurants - - - 204 - - 21.8892ms (791a596a)
+2022-04-21T12:33:03.0522253-03:00 4000000c-0000-fd00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/restaurants
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+access-control-request-method: [Redacted]
+access-control-request-headers: [Redacted]
+origin: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:33:03.0524478-03:00 4000000c-0000-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:33:03.0584341-03:00 4000000c-0000-fd00-b63f-84710c7967bb [INF] Response:
+StatusCode: 204
+X-MiniProfiler-Ids: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted] (999214c4)
+2022-04-21T12:33:03.0587632-03:00 4000000c-0000-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 OPTIONS https://localhost:44372/api/v1/restaurants - - - 204 - - 17.6081ms (791a596a)
+2022-04-21T12:33:03.0701632-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/api/v1/category-restaurants - - (ca22a1cb)
+2022-04-21T12:33:03.0758862-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:33:03.0766867-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/api/v1/restaurants - - (ca22a1cb)
+2022-04-21T12:33:03.0846556-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:33:03.0854148-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:33:03.0857130-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllWithFilter\", controller = \"CategoryRestaurant\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantViewModel]] GetAllWithFilter(IHunger.Infra.CrossCutting.Filters.CategoryRestaurantFilter)" on controller "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:33:03.0864980-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:33:03.0871312-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:33:03.0944470-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/restaurants
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:33:03.0946442-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:33:03.0953582-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:33:03.0955464-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllWithFilter\", controller = \"Restaurant\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[IHunger.WebAPI.ViewModels.Restaurant.RestaurantViewModel]] GetAllWithFilter(IHunger.Infra.CrossCutting.Filters.RestaurantFilter)" on controller "IHunger.WebAPI.V1.Controllers.RestaurantController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:33:03.0962111-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:33:03.0994984-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:33:03.1022992-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:33:03.1577600-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"Restaurant\" AS r" (0723d8ff)
+2022-04-21T12:33:03.2174317-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("62"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:33:03.2247555-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"Restaurant\" AS r" (0723d8ff)
+2022-04-21T12:33:03.2326907-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\"
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:33:03.2398135-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 153.2025ms. (50a9e262)
+2022-04-21T12:33:03.2401286-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantViewModel, IHunger.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-04-21T12:33:03.2417626-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)" in 155.747ms (afa2e885)
+2022-04-21T12:33:03.2424819-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:33:03.2475699-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 768
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:33:03.2493956-03:00 4000000a-0006-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/api/v1/category-restaurants - - - 200 768 application/json;+charset=utf-8 178.8169ms (791a596a)
+2022-04-21T12:33:03.2687823-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT r.\"Id\", r.\"CreatedAt\", r.\"Description\", r.\"IdAddressRestaurant\", r.\"IdCategoryRestaurant\", r.\"Image\", r.\"Name\", r.\"UpdatedAt\", a.\"Id\", a.\"City\", a.\"County\", a.\"CreatedAt\", a.\"District\", a.\"Latitude\", a.\"Longitude\", a.\"Street\", a.\"UpdatedAt\", a.\"ZipCode\", c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\", c0.\"Id\", c0.\"CreatedAt\", c0.\"IdRestaurant\", c0.\"Starts\", c0.\"Text\", c0.\"UpdatedAt\"
+FROM public.\"Restaurant\" AS r
+INNER JOIN public.\"AddressRestaurants\" AS a ON r.\"IdAddressRestaurant\" = a.\"Id\"
+INNER JOIN public.\"CategoryRestaurants\" AS c ON r.\"IdCategoryRestaurant\" = c.\"Id\"
+LEFT JOIN public.\"Comment\" AS c0 ON r.\"Id\" = c0.\"IdRestaurant\"
+ORDER BY r.\"Id\", a.\"Id\", c.\"Id\"" (0723d8ff)
+2022-04-21T12:33:03.2712786-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 174.9936ms. (50a9e262)
+2022-04-21T12:33:03.2716501-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[IHunger.WebAPI.ViewModels.Restaurant.RestaurantViewModel, IHunger.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-04-21T12:33:03.2725167-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)" in 176.9151ms (afa2e885)
+2022-04-21T12:33:03.2726126-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:33:03.2770595-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:33:03.2774449-03:00 40000006-0001-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/api/v1/restaurants - - - 200 2 application/json;+charset=utf-8 200.7419ms (791a596a)
+2022-04-21T12:38:31.9081437-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/restaurants application/json-patch+json 377 (ca22a1cb)
+2022-04-21T12:38:31.9111858-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/restaurants
+Accept: text/plain
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Content-Length: 377
+Content-Type: application/json-patch+json
+Cookie: [Redacted]
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:38:31.9114188-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:38:31.9134047-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.RestaurantController.Create (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:38:31.9227529-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Create\", controller = \"Restaurant\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IHunger.WebAPI.ViewModels.Restaurant.RestaurantViewModel]] Create(IHunger.WebAPI.ViewModels.Restaurant.RestaurantCreatedViewModel)" on controller "IHunger.WebAPI.V1.Controllers.RestaurantController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:38:31.9331698-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.RestaurantController.Create (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:38:31.9466696-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:38:31.9810810-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"Restaurant\" AS r" (0723d8ff)
+2022-04-21T12:38:31.9909903-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"Restaurant\" AS r" (0723d8ff)
+2022-04-21T12:38:32.0254282-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@__restaurant_Name_0='Asian 1'"], CommandType='Text', CommandTimeout='30']"
+""SELECT r.\"Id\", r.\"CreatedAt\", r.\"Description\", r.\"IdAddressRestaurant\", r.\"IdCategoryRestaurant\", r.\"Image\", r.\"Name\", r.\"UpdatedAt\", a.\"Id\", a.\"City\", a.\"County\", a.\"CreatedAt\", a.\"District\", a.\"Latitude\", a.\"Longitude\", a.\"Street\", a.\"UpdatedAt\", a.\"ZipCode\", c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\", c0.\"Id\", c0.\"CreatedAt\", c0.\"IdRestaurant\", c0.\"Starts\", c0.\"Text\", c0.\"UpdatedAt\"
+FROM public.\"Restaurant\" AS r
+INNER JOIN public.\"AddressRestaurants\" AS a ON r.\"IdAddressRestaurant\" = a.\"Id\"
+INNER JOIN public.\"CategoryRestaurants\" AS c ON r.\"IdCategoryRestaurant\" = c.\"Id\"
+LEFT JOIN public.\"Comment\" AS c0 ON r.\"Id\" = c0.\"IdRestaurant\"
+WHERE r.\"Name\" = @__restaurant_Name_0
+ORDER BY r.\"Id\", a.\"Id\", c.\"Id\"" (0723d8ff)
+2022-04-21T12:38:32.0329064-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:38:32.0526314-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("9"ms) [Parameters=["@__id_0='79c9cb64-d84e-4f6c-8ce7-402f1f971703'"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\"
+FROM public.\"CategoryRestaurants\" AS c
+WHERE c.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2022-04-21T12:38:32.1219138-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@p0='f85104f3-039e-4204-bb82-98b41e70decc', @p1='Rio de Janeiro' (Nullable = false), @p2='Brazil' (Nullable = false), @p3='2022-04-21T12:38:32.1099935-03:00' (DbType = DateTime), @p4='Méier' (Nullable = false), @p5='-22.904158', @p6='-43.277586', @p7='Rua Doutor Pache de Faria' (Nullable = false), @p8='2022-04-21T12:38:32.1104453-03:00' (DbType = DateTime), @p9='20710020' (Nullable = false)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AddressRestaurants\" (\"Id\", \"City\", \"County\", \"CreatedAt\", \"District\", \"Latitude\", \"Longitude\", \"Street\", \"UpdatedAt\", \"ZipCode\")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);" (0723d8ff)
+2022-04-21T12:38:32.1308914-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=["@p10='6686a1ce-8030-49c2-b592-f67f208e6a10', @p11='2022-04-21T12:38:32.1093252-03:00' (DbType = DateTime), @p12='Asian restaurant' (Nullable = false), @p13='f85104f3-039e-4204-bb82-98b41e70decc', @p14='79c9cb64-d84e-4f6c-8ce7-402f1f971703', @p15='string' (Nullable = false), @p16='Asian 1' (Nullable = false), @p17='2022-04-21T12:38:32.1098097-03:00' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"Restaurant\" (\"Id\", \"CreatedAt\", \"Description\", \"IdAddressRestaurant\", \"IdCategoryRestaurant\", \"Image\", \"Name\", \"UpdatedAt\")
+VALUES (@p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);" (0723d8ff)
+2022-04-21T12:38:32.1522326-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.RestaurantController.Create (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 218.9625ms. (50a9e262)
+2022-04-21T12:38:32.1525020-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (605b4265)
+2022-04-21T12:38:32.1593787-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.RestaurantController.Create (IHunger.WebAPI)" in 236.5588ms (afa2e885)
+2022-04-21T12:38:32.1594435-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.RestaurantController.Create (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:38:32.1626180-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 603
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:38:32.1629110-03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/restaurants application/json-patch+json 377 - 200 603 application/json;+charset=utf-8 255.2011ms (791a596a)
+2022-04-21T12:39:44.6652451-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/api/v1/category-products - - (ca22a1cb)
+2022-04-21T12:39:44.6685755-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/category-products
+Accept: text/plain
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Cookie: [Redacted]
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:39:44.6700532-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.CategoryProductController.GetAllWithFilter (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:39:44.6805599-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllWithFilter\", controller = \"CategoryProduct\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[IHunger.WebAPI.ViewModels.CategoryProduct.CategoryProductViewModel]] GetAllWithFilter(IHunger.Infra.CrossCutting.Filters.CategoryProductFilter)" on controller "IHunger.WebAPI.V1.Controllers.CategoryProductController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:39:44.6827149-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.CategoryProductController.GetAllWithFilter (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:39:44.6873836-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:39:44.6963115-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryProducts\" AS c" (0723d8ff)
+2022-04-21T12:39:44.7045539-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryProducts\" AS c" (0723d8ff)
+2022-04-21T12:39:44.7167595-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\"
+FROM public.\"CategoryProducts\" AS c" (0723d8ff)
+2022-04-21T12:39:44.7400387-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.CategoryProductController.GetAllWithFilter (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 57.2294ms. (50a9e262)
+2022-04-21T12:39:44.7403427-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[IHunger.WebAPI.ViewModels.CategoryProduct.CategoryProductViewModel, IHunger.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-04-21T12:39:44.7432964-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.CategoryProductController.GetAllWithFilter (IHunger.WebAPI)" in 62.6705ms (afa2e885)
+2022-04-21T12:39:44.7433581-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.CategoryProductController.GetAllWithFilter (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:39:44.7467364-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 2675
+api-supported-versions: [Redacted] (999214c4)
+2022-04-21T12:39:44.7471739-03:00 4000000b-000a-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/api/v1/category-products - - - 200 2675 application/json;+charset=utf-8 81.9160ms (791a596a)
+2022-04-21T12:42:34.6222214-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/products application/json-patch+json 288 (ca22a1cb)
+2022-04-21T12:42:34.6257681-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/products
+Accept: text/plain
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Content-Length: 288
+Content-Type: application/json-patch+json
+Cookie: [Redacted]
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:42:34.6259471-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:42:34.6280571-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.ProductController.Create (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:42:34.6364269-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Create\", controller = \"Product\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IHunger.WebAPI.ViewModels.Product.ProductViewModel]] Create(IHunger.WebAPI.ViewModels.Product.ProductCreatedViewModel)" on controller "IHunger.WebAPI.V1.Controllers.ProductController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:42:34.6515830-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.ProductController.Create (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:42:34.6786125-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:42:34.6858076-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"Restaurant\" AS r" (0723d8ff)
+2022-04-21T12:42:34.7119385-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("11"ms) [Parameters=["@__id_0='6686a1ce-8030-49c2-b592-f67f208e6a10'"], CommandType='Text', CommandTimeout='30']"
+""SELECT r.\"Id\", r.\"CreatedAt\", r.\"Description\", r.\"IdAddressRestaurant\", r.\"IdCategoryRestaurant\", r.\"Image\", r.\"Name\", r.\"UpdatedAt\", a.\"Id\", a.\"City\", a.\"County\", a.\"CreatedAt\", a.\"District\", a.\"Latitude\", a.\"Longitude\", a.\"Street\", a.\"UpdatedAt\", a.\"ZipCode\", c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\"
+FROM public.\"Restaurant\" AS r
+INNER JOIN public.\"AddressRestaurants\" AS a ON r.\"IdAddressRestaurant\" = a.\"Id\"
+INNER JOIN public.\"CategoryRestaurants\" AS c ON r.\"IdCategoryRestaurant\" = c.\"Id\"
+WHERE r.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2022-04-21T12:42:34.7219477-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryProducts\" AS c" (0723d8ff)
+2022-04-21T12:42:34.7341625-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='9535fb70-5d21-4684-b025-7148084251cb'"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\"
+FROM public.\"CategoryProducts\" AS c
+WHERE c.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2022-04-21T12:42:34.7555396-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"Products\" AS p" (0723d8ff)
+2022-04-21T12:42:34.8127362-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("19"ms) [Parameters=["@p0='7dd03656-094c-43a3-9eaa-1b7d77229f46', @p1='2022-04-21T12:42:34.7878569-03:00' (DbType = DateTime), @p2='Meat, noodle and vegetable' (Nullable = false), @p3='9535fb70-5d21-4684-b025-7148084251cb', @p4='6686a1ce-8030-49c2-b592-f67f208e6a10', @p5='string' (Nullable = false), @p6='True', @p7='Yakisoba' (Nullable = false), @p8='100', @p9='2022-04-21T12:42:34.7886820-03:00' (DbType = DateTime), @p10='False', @p11='False'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"Products\" (\"Id\", \"CreatedAt\", \"Description\", \"IdCategoryProduct\", \"IdRestaurant\", \"Image\", \"Kosher\", \"Name\", \"Price\", \"UpdatedAt\", \"Vegan\", \"Vegetarian\")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);" (0723d8ff)
+2022-04-21T12:42:34.8428310-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.ProductController.Create (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 191.1743ms. (50a9e262)
+2022-04-21T12:42:34.8431859-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Executing "OkObjectResult", writing value of type '"<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'. (605b4265)
+2022-04-21T12:42:34.8478900-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.ProductController.Create (IHunger.WebAPI)" in 211.3992ms (afa2e885)
+2022-04-21T12:42:34.8479504-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.ProductController.Create (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:42:34.8511486-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 344
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:42:34.8515007-03:00 40000005-0008-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/products application/json-patch+json 288 - 200 344 application/json;+charset=utf-8 229.2716ms (791a596a)
+2022-04-21T12:42:42.3675377-03:00 40000006-000c-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 OPTIONS https://localhost:44372/api/v1/category-restaurants - - (ca22a1cb)
+2022-04-21T12:42:42.3716496-03:00 40000006-000c-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+access-control-request-method: [Redacted]
+access-control-request-headers: [Redacted]
+origin: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:42:42.3792961-03:00 40000007-0008-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 OPTIONS https://localhost:44372/api/v1/restaurants - - (ca22a1cb)
+2022-04-21T12:42:42.3793202-03:00 40000006-000c-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:42:42.3857966-03:00 40000007-0008-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/restaurants
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+access-control-request-method: [Redacted]
+access-control-request-headers: [Redacted]
+origin: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:42:42.3860179-03:00 40000007-0008-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:42:42.3888278-03:00 40000006-000c-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 204
+X-MiniProfiler-Ids: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted] (999214c4)
+2022-04-21T12:42:42.3920220-03:00 40000006-000c-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 OPTIONS https://localhost:44372/api/v1/category-restaurants - - - 204 - - 24.4555ms (791a596a)
+2022-04-21T12:42:42.3942625-03:00 40000007-0008-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 204
+X-MiniProfiler-Ids: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted] (999214c4)
+2022-04-21T12:42:42.3946316-03:00 40000007-0008-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 OPTIONS https://localhost:44372/api/v1/restaurants - - - 204 - - 15.5491ms (791a596a)
+2022-04-21T12:42:42.4070668-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/api/v1/category-restaurants - - (ca22a1cb)
+2022-04-21T12:42:42.4118588-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:42:42.4121397-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:42:42.4128078-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:42:42.4129404-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllWithFilter\", controller = \"CategoryRestaurant\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantViewModel]] GetAllWithFilter(IHunger.Infra.CrossCutting.Filters.CategoryRestaurantFilter)" on controller "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:42:42.4151073-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:42:42.4156726-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:42:42.4554035-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/api/v1/restaurants - - (ca22a1cb)
+2022-04-21T12:42:42.4601906-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/restaurants
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:42:42.4604949-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:42:42.4610536-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:42:42.4611975-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllWithFilter\", controller = \"Restaurant\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[IHunger.WebAPI.ViewModels.Restaurant.RestaurantViewModel]] GetAllWithFilter(IHunger.Infra.CrossCutting.Filters.RestaurantFilter)" on controller "IHunger.WebAPI.V1.Controllers.RestaurantController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:42:42.4615777-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:42:42.4620667-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:42:42.5010261-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:42:42.5113864-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:42:42.5288508-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\"
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:42:42.5362479-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 120.8505ms. (50a9e262)
+2022-04-21T12:42:42.5377864-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantViewModel, IHunger.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-04-21T12:42:42.5394655-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)" in 126.4485ms (afa2e885)
+2022-04-21T12:42:42.5395666-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:42:42.5456890-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 768
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:42:42.5488273-03:00 40000007-0003-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/api/v1/category-restaurants - - - 200 768 application/json;+charset=utf-8 141.7437ms (791a596a)
+2022-04-21T12:42:42.5509070-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"Restaurant\" AS r" (0723d8ff)
+2022-04-21T12:42:42.5611558-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"Restaurant\" AS r" (0723d8ff)
+2022-04-21T12:42:42.5776015-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT r.\"Id\", r.\"CreatedAt\", r.\"Description\", r.\"IdAddressRestaurant\", r.\"IdCategoryRestaurant\", r.\"Image\", r.\"Name\", r.\"UpdatedAt\", a.\"Id\", a.\"City\", a.\"County\", a.\"CreatedAt\", a.\"District\", a.\"Latitude\", a.\"Longitude\", a.\"Street\", a.\"UpdatedAt\", a.\"ZipCode\", c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\", c0.\"Id\", c0.\"CreatedAt\", c0.\"IdRestaurant\", c0.\"Starts\", c0.\"Text\", c0.\"UpdatedAt\"
+FROM public.\"Restaurant\" AS r
+INNER JOIN public.\"AddressRestaurants\" AS a ON r.\"IdAddressRestaurant\" = a.\"Id\"
+INNER JOIN public.\"CategoryRestaurants\" AS c ON r.\"IdCategoryRestaurant\" = c.\"Id\"
+LEFT JOIN public.\"Comment\" AS c0 ON r.\"Id\" = c0.\"IdRestaurant\"
+ORDER BY r.\"Id\", a.\"Id\", c.\"Id\"" (0723d8ff)
+2022-04-21T12:42:42.5856567-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 123.9942ms. (50a9e262)
+2022-04-21T12:42:42.5859433-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[IHunger.WebAPI.ViewModels.Restaurant.RestaurantViewModel, IHunger.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-04-21T12:42:42.5866364-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)" in 125.3728ms (afa2e885)
+2022-04-21T12:42:42.5866996-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:42:42.5906865-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 759
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:42:42.5910235-03:00 40000008-0007-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/api/v1/restaurants - - - 200 759 application/json;+charset=utf-8 135.6455ms (791a596a)
+2022-04-21T12:43:08.1377847-03:00 4000000e-0005-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 OPTIONS https://localhost:44372/api/v1/category-restaurants - - (ca22a1cb)
+2022-04-21T12:43:08.1414131-03:00 4000000e-0005-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+access-control-request-method: [Redacted]
+access-control-request-headers: [Redacted]
+origin: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:43:08.1415908-03:00 4000000e-0005-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:43:08.1448442-03:00 4000000e-0005-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 204
+X-MiniProfiler-Ids: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted] (999214c4)
+2022-04-21T12:43:08.1448893-03:00 4000000a-000e-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 OPTIONS https://localhost:44372/api/v1/restaurants - - (ca22a1cb)
+2022-04-21T12:43:08.1463060-03:00 4000000e-0005-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 OPTIONS https://localhost:44372/api/v1/category-restaurants - - - 204 - - 8.5651ms (791a596a)
+2022-04-21T12:43:08.1481338-03:00 4000000a-000e-fe00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/restaurants
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+access-control-request-method: [Redacted]
+access-control-request-headers: [Redacted]
+origin: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:43:08.1483392-03:00 4000000a-000e-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:43:08.1522408-03:00 4000000a-000e-fe00-b63f-84710c7967bb [INF] Response:
+StatusCode: 204
+X-MiniProfiler-Ids: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted] (999214c4)
+2022-04-21T12:43:08.1525736-03:00 4000000a-000e-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 OPTIONS https://localhost:44372/api/v1/restaurants - - - 204 - - 7.6711ms (791a596a)
+2022-04-21T12:43:08.1594746-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/api/v1/category-restaurants - - (ca22a1cb)
+2022-04-21T12:43:08.1626979-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/category-restaurants
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:43:08.1628242-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:43:08.1632900-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:43:08.1633968-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllWithFilter\", controller = \"CategoryRestaurant\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantViewModel]] GetAllWithFilter(IHunger.Infra.CrossCutting.Filters.CategoryRestaurantFilter)" on controller "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:43:08.1637710-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:43:08.1639977-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/api/v1/restaurants - - (ca22a1cb)
+2022-04-21T12:43:08.1659339-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:43:08.1996148-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/v1/restaurants
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Authorization: [Redacted]
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-04-21T12:43:08.1997725-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-04-21T12:43:08.2004961-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (500cc934)
+2022-04-21T12:43:08.2006527-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"GetAllWithFilter\", controller = \"Restaurant\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[System.Collections.Generic.IEnumerable`1[IHunger.WebAPI.ViewModels.Restaurant.RestaurantViewModel]] GetAllWithFilter(IHunger.Infra.CrossCutting.Filters.RestaurantFilter)" on controller "IHunger.WebAPI.V1.Controllers.RestaurantController" ("IHunger.WebAPI"). (122b2fdf)
+2022-04-21T12:43:08.2011289-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2022-04-21T12:43:08.2017076-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-04-21T12:43:08.2073635-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:43:08.2162268-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"Restaurant\" AS r" (0723d8ff)
+2022-04-21T12:43:08.2198262-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:43:08.2295557-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"Restaurant\" AS r" (0723d8ff)
+2022-04-21T12:43:08.2613008-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\"
+FROM public.\"CategoryRestaurants\" AS c" (0723d8ff)
+2022-04-21T12:43:08.2667456-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 102.7086ms. (50a9e262)
+2022-04-21T12:43:08.2682429-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[IHunger.WebAPI.ViewModels.CategoryRestaurant.CategoryRestaurantViewModel, IHunger.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-04-21T12:43:08.2757065-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)" in 112.2409ms (afa2e885)
+2022-04-21T12:43:08.2761950-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.CategoryRestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:43:08.2798886-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT r.\"Id\", r.\"CreatedAt\", r.\"Description\", r.\"IdAddressRestaurant\", r.\"IdCategoryRestaurant\", r.\"Image\", r.\"Name\", r.\"UpdatedAt\", a.\"Id\", a.\"City\", a.\"County\", a.\"CreatedAt\", a.\"District\", a.\"Latitude\", a.\"Longitude\", a.\"Street\", a.\"UpdatedAt\", a.\"ZipCode\", c.\"Id\", c.\"CreatedAt\", c.\"Description\", c.\"Name\", c.\"UpdatedAt\", c0.\"Id\", c0.\"CreatedAt\", c0.\"IdRestaurant\", c0.\"Starts\", c0.\"Text\", c0.\"UpdatedAt\"
+FROM public.\"Restaurant\" AS r
+INNER JOIN public.\"AddressRestaurants\" AS a ON r.\"IdAddressRestaurant\" = a.\"Id\"
+INNER JOIN public.\"CategoryRestaurants\" AS c ON r.\"IdCategoryRestaurant\" = c.\"Id\"
+LEFT JOIN public.\"Comment\" AS c0 ON r.\"Id\" = c0.\"IdRestaurant\"
+ORDER BY r.\"Id\", a.\"Id\", c.\"Id\"" (0723d8ff)
+2022-04-21T12:43:08.3064184-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 768
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:43:08.3083767-03:00 4000000e-000a-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/api/v1/category-restaurants - - - 200 768 application/json;+charset=utf-8 148.7295ms (791a596a)
+2022-04-21T12:43:08.3089536-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 107.4663ms. (50a9e262)
+2022-04-21T12:43:08.3103574-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[IHunger.WebAPI.ViewModels.Restaurant.RestaurantViewModel, IHunger.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (605b4265)
+2022-04-21T12:43:08.3111839-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)" in 110.4701ms (afa2e885)
+2022-04-21T12:43:08.3112624-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.RestaurantController.GetAllWithFilter (IHunger.WebAPI)"' (99874f2b)
+2022-04-21T12:43:08.3155963-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json; charset=utf-8
+Content-Length: 759
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2022-04-21T12:43:08.3160355-03:00 40000010-0005-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/api/v1/restaurants - - - 200 759 application/json;+charset=utf-8 152.0351ms (791a596a)
