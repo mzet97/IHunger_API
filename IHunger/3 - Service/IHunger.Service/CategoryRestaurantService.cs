@@ -1,4 +1,5 @@
 ﻿using IHunger.Domain.Interfaces;
+using IHunger.Domain.Interfaces.Repository;
 using IHunger.Domain.Interfaces.Services;
 using IHunger.Domain.Models;
 using IHunger.Domain.Models.Validations;
@@ -14,21 +15,20 @@ namespace IHunger.Service
 {
     public class CategoryRestaurantService : BaseService, ICategoryRestaurantService
     {
+        private readonly ICategoryRestaurantRepository _categoryRestaurantRepository;
 
         public CategoryRestaurantService(
-            IUnitOfWork unitOfWork, 
-            INotifier notifier) : base(notifier, unitOfWork)
+            ICategoryRestaurantRepository categoryRestaurantRepository,
+            INotifier notifier) : base(notifier)
         {
-
+            _categoryRestaurantRepository = categoryRestaurantRepository;
         }
 
         public async Task<CategoryRestaurant> Create(CategoryRestaurant categoryRestaurant)
         {
             if (!Validate(new CategoryRestaurantValidation(), categoryRestaurant)) return null;
 
-            var categoryRestaurantDb = await _unitOfWork
-                .RepositoryFactory
-                .CategoryRestaurantRepository
+            var categoryRestaurantDb = await _categoryRestaurantRepository
                 .Search(x => x.Name == categoryRestaurant.Name);
 
             if (categoryRestaurantDb != null && categoryRestaurantDb.Any())
@@ -37,12 +37,10 @@ namespace IHunger.Service
                 return await Task.FromResult<CategoryRestaurant>(null);
             }
 
-            await _unitOfWork
-                .RepositoryFactory
-                .CategoryRestaurantRepository
+            await _categoryRestaurantRepository
                 .Add(categoryRestaurant);
 
-            if (await _unitOfWork.Commit())
+            if (await _categoryRestaurantRepository.Commit())
             {
                 return await Task.FromResult(categoryRestaurant);
             }
@@ -53,9 +51,7 @@ namespace IHunger.Service
 
         public async Task<List<CategoryRestaurant>> GetAll()
         {
-            return await _unitOfWork
-                .RepositoryFactory
-                .CategoryRestaurantRepository
+            return await _categoryRestaurantRepository
                 .GetAll();
         }
 
@@ -123,9 +119,7 @@ namespace IHunger.Service
                 filter = filter.And(x => x.Id == CategoryRestaurantFilter.Id);
             }
 
-            return await _unitOfWork
-                .RepositoryFactory
-                .CategoryRestaurantRepository
+            return await _categoryRestaurantRepository
                 .Search(
                     filter, 
                     ordeBy, 
@@ -135,9 +129,7 @@ namespace IHunger.Service
 
         public async Task<CategoryRestaurant> GetById(Guid id)
         {
-            return await _unitOfWork
-                .RepositoryFactory
-                .CategoryRestaurantRepository
+            return await _categoryRestaurantRepository
                 .GetById(id);
         }
 
@@ -145,9 +137,7 @@ namespace IHunger.Service
         {
             if (!Validate(new CategoryRestaurantValidation(), categoryRestaurant)) return null;
 
-            var categoryRestaurantDb = await _unitOfWork
-                .RepositoryFactory
-                .CategoryRestaurantRepository
+            var categoryRestaurantDb = await _categoryRestaurantRepository
                 .GetById(categoryRestaurant.Id);
 
             if (categoryRestaurantDb == null)
@@ -166,12 +156,10 @@ namespace IHunger.Service
                 categoryRestaurantDb.Description = categoryRestaurant.Description;
             }
 
-            _unitOfWork
-                .RepositoryFactory
-                .CategoryRestaurantRepository
+            _categoryRestaurantRepository
                 .Update(categoryRestaurantDb);
 
-            if (await _unitOfWork.Commit())
+            if (await _categoryRestaurantRepository.Commit())
             {
                 return await Task.FromResult(categoryRestaurantDb);
             }
@@ -182,9 +170,7 @@ namespace IHunger.Service
 
         public async Task<CategoryRestaurant> Delete(Guid id)
         {
-            var categoryRestaurantDb = await _unitOfWork
-                .RepositoryFactory
-                .CategoryRestaurantRepository
+            var categoryRestaurantDb = await _categoryRestaurantRepository
                 .GetById(id);
 
             if (categoryRestaurantDb == null)
@@ -193,12 +179,10 @@ namespace IHunger.Service
                 return await Task.FromResult<CategoryRestaurant>(null);
             }
 
-            _unitOfWork
-                .RepositoryFactory
-                .CategoryRestaurantRepository
+            _categoryRestaurantRepository
                 .Remove(id);
 
-            if (await _unitOfWork.Commit())
+            if (await _categoryRestaurantRepository.Commit())
             {
                 return await Task.FromResult(categoryRestaurantDb);
             }

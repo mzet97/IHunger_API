@@ -1,4 +1,5 @@
 ﻿using IHunger.Domain.Interfaces;
+using IHunger.Domain.Interfaces.Repository;
 using IHunger.Domain.Interfaces.Services;
 using IHunger.Domain.Models;
 using IHunger.Domain.Models.Validations;
@@ -11,21 +12,23 @@ namespace IHunger.Service
 {
     public class CommentService : BaseService, ICommentService
     {
+        private readonly IRestaurantRepository _restaurantRepository;
+        private readonly ICommentRepository _commentRepository;
 
         public CommentService(
-            IUnitOfWork unitOfWork,
-            INotifier notifier) : base(notifier, unitOfWork)
+            IRestaurantRepository restaurantRepository,
+            ICommentRepository commentRepository,
+            INotifier notifier) : base(notifier)
         {
-
+            _restaurantRepository = restaurantRepository;
+            _commentRepository = commentRepository;
         }
 
         public async Task<Comment> Create(Guid idRestaurant, Comment comment)
         {
             if (!Validate(new CommentValidation(), comment)) return null;
 
-            var restaurantBD = await _unitOfWork
-                .RepositoryFactory
-                .RestaurantRepository
+            var restaurantBD = await _restaurantRepository
                 .GetById(idRestaurant);
 
             if (restaurantBD == null)
@@ -34,12 +37,10 @@ namespace IHunger.Service
                 return await Task.FromResult<Comment>(null);
             }
 
-            await _unitOfWork
-                .RepositoryFactory
-                .CommentRepository
+            await _commentRepository
                 .Add(comment);
 
-            if (await _unitOfWork.Commit())
+            if (await _commentRepository.Commit())
             {
                 return await Task.FromResult(comment);
             }
@@ -50,17 +51,13 @@ namespace IHunger.Service
 
         public async Task<Comment> GetById(Guid idRestaurant, Guid idComment)
         {
-            return await _unitOfWork
-                .RepositoryFactory
-                .CommentRepository
+            return await _commentRepository
                 .GetById(idRestaurant, idComment);
         }
 
         public async Task<List<Comment>> GetAll(Guid idRestaurant)
         {
-            return await _unitOfWork
-                .RepositoryFactory
-                .CommentRepository
+            return await _commentRepository
                 .GetAll(idRestaurant);
         }
 
@@ -68,9 +65,7 @@ namespace IHunger.Service
         {
             if (!Validate(new CommentValidation(), comment)) return null;
 
-            var commentDb = await _unitOfWork
-                .RepositoryFactory
-                .CommentRepository
+            var commentDb = await _commentRepository
                 .GetById(idRestaurant, idComment);
 
             if (commentDb == null)
@@ -90,12 +85,10 @@ namespace IHunger.Service
             }
 
 
-            _unitOfWork
-                .RepositoryFactory
-                .CommentRepository
+            _commentRepository
                 .Update(commentDb);
 
-            if (await _unitOfWork.Commit())
+            if (await _commentRepository.Commit())
             {
                 return await Task.FromResult(commentDb);
             }
@@ -106,9 +99,7 @@ namespace IHunger.Service
 
         public async Task<Comment> Delete(Guid idRestaurant, Guid idComment)
         {
-            var comment = await _unitOfWork
-                .RepositoryFactory
-                .CommentRepository
+            var comment = await _commentRepository
                 .GetById(idRestaurant, idComment);
 
             if (comment == null)
@@ -117,12 +108,10 @@ namespace IHunger.Service
                 return await Task.FromResult<Comment>(null);
             }
 
-            _unitOfWork
-                .RepositoryFactory
-                .CommentRepository
+            _commentRepository
                 .Remove(idComment);
 
-            if (await _unitOfWork.Commit())
+            if (await _commentRepository.Commit())
             {
                 return await Task.FromResult(comment);
             }

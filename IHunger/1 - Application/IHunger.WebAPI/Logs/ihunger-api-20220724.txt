@@ -1,0 +1,321 @@
+2022-07-24T08:47:03.9176148-03:00  [INF] User profile is available. Using '"C:\Users\mathe\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2022-07-24T08:47:04.1944480-03:00  [INF] Creating key {d259bc70-b1d9-4584-843e-c3e8736aae36} with creation date 2022-07-24 11:47:04Z, activation date 2022-07-24 11:47:04Z, and expiration date 2022-10-22 11:47:04Z. (77afce94)
+2022-07-24T08:47:04.2082355-03:00  [INF] Writing data to file '"C:\Users\mathe\AppData\Local\ASP.NET\DataProtection-Keys\key-d259bc70-b1d9-4584-843e-c3e8736aae36.xml"'. (da22a8b1)
+2022-07-24T08:47:06.0711837-03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-24T08:47:06.0759496-03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-24T08:47:06.0800840-03:00  [INF] Content root path: "D:\TI\git\v2\IHunger_API\IHunger\1 - Application\IHunger.WebAPI" (b5d60022)
+2022-07-24T08:47:06.1883659-03:00 40000002-000b-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger - - (ca22a1cb)
+2022-07-24T08:47:06.2505965-03:00 40000002-000b-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+dnt: 1
+upgrade-insecure-requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-07-24T08:47:06.8982151-03:00 40000002-000b-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 301
+X-MiniProfiler-Ids: [Redacted]
+Location: swagger/index.html (999214c4)
+2022-07-24T08:47:06.9722174-03:00 40000002-000b-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger - - - 301 - - 794.3024ms (791a596a)
+2022-07-24T08:47:07.0049109-03:00 40000002-0003-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/index.html - - (ca22a1cb)
+2022-07-24T08:47:07.0108160-03:00 40000002-0003-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/index.html
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62
+dnt: 1
+upgrade-insecure-requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted] (893de8da)
+2022-07-24T08:47:07.5307308-03:00 40000002-0003-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: text/html;charset=utf-8 (999214c4)
+2022-07-24T08:47:07.5344644-03:00 40000002-0003-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/index.html - - - 200 - text/html;charset=utf-8 529.5419ms (791a596a)
+2022-07-24T08:47:07.5940478-03:00 40000002-000f-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/swagger-ui.css - - (ca22a1cb)
+2022-07-24T08:47:07.5984769-03:00 40000002-000f-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/swagger-ui.css
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-07-24T08:47:07.5988571-03:00 40000002-0005-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/swagger-ui-bundle.js - - (ca22a1cb)
+2022-07-24T08:47:07.6033057-03:00 40000002-0005-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/swagger-ui-bundle.js
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-07-24T08:47:07.6120388-03:00 40000004-0003-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/swagger-ui-standalone-preset.js - - (ca22a1cb)
+2022-07-24T08:47:07.6166743-03:00 40000004-0003-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/swagger-ui-standalone-preset.js
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-07-24T08:47:07.6246283-03:00 40000002-0009-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2022-07-24T08:47:07.6324221-03:00 40000002-0009-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 7.5602ms (791a596a)
+2022-07-24T08:47:07.6722363-03:00 40000004-0003-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"' (27b0a520)
+2022-07-24T08:47:07.6722371-03:00 40000002-000f-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2022-07-24T08:47:07.6722596-03:00 40000002-0005-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"' (27b0a520)
+2022-07-24T08:47:07.6785505-03:00 40000004-0003-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/javascript
+Last-Modified: Sat, 16 Oct 2021 12:54:30 GMT
+ETag: [Redacted]
+Accept-Ranges: bytes
+Content-Length: 337162 (999214c4)
+2022-07-24T08:47:07.6847853-03:00 40000002-0005-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/javascript
+Last-Modified: Sat, 16 Oct 2021 12:54:30 GMT
+ETag: [Redacted]
+Accept-Ranges: bytes
+Content-Length: 1092889 (999214c4)
+2022-07-24T08:47:07.6907316-03:00 40000002-000f-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: text/css
+Last-Modified: Sat, 16 Oct 2021 12:54:30 GMT
+ETag: [Redacted]
+Accept-Ranges: bytes
+Content-Length: 143632 (999214c4)
+2022-07-24T08:47:07.6943905-03:00 40000002-000f-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/swagger-ui.css - - - 200 143632 text/css 99.9509ms (791a596a)
+2022-07-24T08:47:07.7037400-03:00 40000004-0003-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 91.7139ms (791a596a)
+2022-07-24T08:47:07.7476390-03:00 40000002-0005-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 148.7815ms (791a596a)
+2022-07-24T08:47:08.2338036-03:00 40000002-0000-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/v1/swagger.json - - (ca22a1cb)
+2022-07-24T08:47:08.2385805-03:00 40000002-0000-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/v1/swagger.json
+Accept: application/json,*/*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-07-24T08:47:08.3116840-03:00 40000002-0001-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/favicon-32x32.png - - (ca22a1cb)
+2022-07-24T08:47:08.3161380-03:00 40000002-0001-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/favicon-32x32.png
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-07-24T08:47:08.3176786-03:00 40000002-0001-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2022-07-24T08:47:08.3225794-03:00 40000002-0001-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: image/png
+Last-Modified: Sat, 16 Oct 2021 12:54:30 GMT
+ETag: [Redacted]
+Accept-Ranges: bytes
+Content-Length: 628 (999214c4)
+2022-07-24T08:47:08.3228588-03:00 40000002-0001-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/favicon-32x32.png - - - 200 628 image/png 11.2662ms (791a596a)
+2022-07-24T08:47:08.5424191-03:00 40000002-0000-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json;charset=utf-8 (999214c4)
+2022-07-24T08:47:08.5447069-03:00 40000002-0000-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 310.8969ms (791a596a)
+2022-07-24T08:47:47.4389309-03:00 40000004-0008-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/auth/login application/json-patch+json 57 (ca22a1cb)
+2022-07-24T08:47:47.4450922-03:00 40000004-0008-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/login
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Content-Length: 57
+Content-Type: application/json-patch+json
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-07-24T08:47:47.4509392-03:00 40000004-0008-ff00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2022-07-24T08:47:47.5432061-03:00 40000004-0008-ff00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)"' (500cc934)
+2022-07-24T08:47:47.6112061-03:00 40000004-0008-ff00-b63f-84710c7967bb [INF] Route matched with "{action = \"Login\", controller = \"Auth\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(IHunger.WebAPI.ViewModels.User.LoginUserViewModel)" on controller "IHunger.WebAPI.V1.Controllers.AuthController" ("IHunger.WebAPI"). (122b2fdf)
+2022-07-24T08:47:49.6478922-03:00 40000004-0008-ff00-b63f-84710c7967bb [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development. (4007092b)
+2022-07-24T08:47:50.0274008-03:00 40000004-0008-ff00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2022-07-24T08:47:54.8482508-03:00 40000004-0008-ff00-b63f-84710c7967bb [ERR] An error occurred using the connection to database '"ihunger"' on server '""'. (5fc3407c)
+2022-07-24T08:47:55.1446427-03:00 40000004-0008-ff00-b63f-84710c7967bb [ERR] An exception occurred while iterating over the results of a query for context type '"IHunger.Infra.Data.Context.DataIdentityDbContext"'."
+""System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Failed to connect to 127.0.0.1:5432
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|193_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.ConnectorPool.<Get>g__RentAsync|27_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|45_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()" (f5c7ac34)
+System.InvalidOperationException: An exception has been raised that is likely due to a transient failure.
+ ---> Npgsql.NpgsqlException (0x80004005): Failed to connect to 127.0.0.1:5432
+ ---> System.Net.Sockets.SocketException (10061): Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|193_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.ConnectorPool.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.ConnectorPool.<Get>g__RentAsync|27_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|45_0(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   --- End of inner exception stack trace ---
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-07-24T08:48:00.5362132-03:00 40000004-0008-ff00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)" in 12916.5287ms (afa2e885)
+2022-07-24T08:48:00.5385533-03:00 40000004-0008-ff00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)"' (99874f2b)
+2022-07-24T08:48:00.6057180-03:00 40000004-0008-ff00-b63f-84710c7967bb [ERR] An exception has been raised that is likely due to a transient failure. (0c30b9c3)
+2022-07-24T08:48:00.6098951-03:00 40000004-0008-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 500
+X-MiniProfiler-Ids: [Redacted] (999214c4)
+2022-07-24T08:48:00.6278603-03:00 40000004-0008-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/auth/login application/json-patch+json 57 - 500 - - 13188.9365ms (791a596a)
+2022-07-24T16:14:08.3335443-03:00  [INF] User profile is available. Using '"C:\Users\mathe\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2022-07-24T16:14:09.6402736-03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-24T16:14:09.6431223-03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-24T16:14:09.6456623-03:00  [INF] Content root path: "D:\TI\git\v2\IHunger_API\IHunger\1 - Application\IHunger.WebAPI" (b5d60022)
+2022-07-24T16:14:09.6849491-03:00 40000007-000e-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger - - (ca22a1cb)
+2022-07-24T16:14:09.7534244-03:00 40000007-000e-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-US;q=0.7
+Connection: close
+Host: localhost:44372
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+dnt: 1
+upgrade-insecure-requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2022-07-24T16:14:10.2837300-03:00 40000007-000e-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 301
+X-MiniProfiler-Ids: [Redacted]
+Location: swagger/index.html (999214c4)
+2022-07-24T16:14:10.2960540-03:00 40000007-000e-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger - - - 0 - - 618.7798ms (791a596a)

@@ -21,6 +21,6 @@ namespace IHunger.Domain.Interfaces
             Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
             int? pageSize = null,
             int? index = null);
-        Task<int> SaveChanges();
+        Task<bool> Commit();
     }
 }

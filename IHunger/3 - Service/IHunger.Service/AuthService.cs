@@ -1,5 +1,6 @@
 ﻿using IHunger.Domain.Enumeration;
 using IHunger.Domain.Interfaces;
+using IHunger.Domain.Interfaces.Repository;
 using IHunger.Domain.Interfaces.Services;
 using IHunger.Domain.Models;
 using IHunger.Domain.Models.Validations;
@@ -21,18 +22,20 @@ namespace IHunger.Service
         private readonly SignInManager<User> _signInManager;
         private readonly UserManager<User> _userManager;
         private readonly AppSettings _appSettings;
+        private readonly IProfileUserRepository _profileUserRepository;
 
         public AuthService(
             INotifier notifier,
-            IUnitOfWork unitOfWork,
             SignInManager<User> signInManager,
             UserManager<User> userManager,
-            IOptions<AppSettings> appSettings) :
-            base(notifier, unitOfWork)
+            IOptions<AppSettings> appSettings,
+            IProfileUserRepository profileUserRepository) :
+            base(notifier)
         {
             _signInManager = signInManager;
             _userManager = userManager;
             _appSettings = appSettings.Value;
+            _profileUserRepository = profileUserRepository;
         }
 
         public async Task<LoginResponseViewModel> Register(User user, string password)
@@ -414,7 +417,7 @@ namespace IHunger.Service
 
             var userToken = new UserTokenViewModel(user.Id.ToString(), user.Email, claims);
 
-            var profile = await _unitOfWork.RepositoryFactory.ProfileUserRepository.GetById(user.IdProfileUser);
+            var profile = await _profileUserRepository.GetById(user.IdProfileUser);
 
             if (profile != null)
             {

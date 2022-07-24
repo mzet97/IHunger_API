@@ -1,4 +1,5 @@
 ﻿using IHunger.Domain.Interfaces;
+using IHunger.Domain.Interfaces.Repository;
 using IHunger.Domain.Interfaces.Services;
 using IHunger.Domain.Models;
 using System;
@@ -10,26 +11,24 @@ namespace IHunger.Service
 {
     public class OrderStatusService : BaseService, IOrderStatusService
     {
-        public OrderStatusService(
-            INotifier notifier,
-            IUnitOfWork unitOfWork) : base(notifier, unitOfWork)
-        {
+        private readonly IOrderStatusRepository _orderStatusRepository;
 
+        public OrderStatusService(
+            IOrderStatusRepository orderStatusRepository,
+            INotifier notifier) : base(notifier)
+        {
+            _orderStatusRepository = orderStatusRepository;
         }
 
         public async Task<List<OrderStatus>> GetAll()
         {
-            return await _unitOfWork
-               .RepositoryFactory
-               .OrderStatusRepository
+            return await _orderStatusRepository
                .GetAll();
         }
 
         public async Task<OrderStatus> GetById(Guid id)
         {
-            return await _unitOfWork
-              .RepositoryFactory
-              .OrderStatusRepository
+            return await _orderStatusRepository
               .GetById(id);
         }
 

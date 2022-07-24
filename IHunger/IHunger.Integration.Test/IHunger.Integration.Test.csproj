@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Faker.NETCore" Version="1.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="6.0.7" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.1.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\1 - Application\IHunger.WebAPI\IHunger.WebAPI.csproj" />
+    <ProjectReference Include="..\2 - Domain\IHunger.Domain\IHunger.Domain.csproj" />
+    <ProjectReference Include="..\3 - Service\IHunger.Service\IHunger.Service.csproj" />
+    <ProjectReference Include="..\4 - Infra\4.1 - Data\IHunger.Infra.Data\IHunger.Infra.Data.csproj" />
+    <ProjectReference Include="..\4 - Infra\4.2 - CrossCutting\IHunger.Infra.CrossCutting\IHunger.Infra.CrossCutting.csproj" />
+  </ItemGroup>
+
+</Project>

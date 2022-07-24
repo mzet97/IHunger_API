@@ -1,4 +1,5 @@
 ﻿using IHunger.Domain.Interfaces;
+using IHunger.Domain.Interfaces.Repository;
 using IHunger.Domain.Interfaces.Services;
 using IHunger.Domain.Models;
 using IHunger.Domain.Models.Validations;
@@ -15,19 +16,26 @@ namespace IHunger.Service
 {
     public class ProductService : BaseService, IProductService
     {
+        private readonly IRestaurantRepository _restaurantRepository;
+        private readonly IProductRepository _productRepository;
+        private readonly ICategoryProductRepository _categoryProductRepository;
+
         public ProductService(
-            INotifier notifier, 
-            IUnitOfWork unitOfWork) : base(notifier, unitOfWork)
+            IRestaurantRepository restaurantRepository, 
+            IProductRepository productRepository, 
+            ICategoryProductRepository categoryProductRepository, 
+            INotifier notifier) : base(notifier)
         {
+            _restaurantRepository = restaurantRepository;
+            _productRepository = productRepository;
+            _categoryProductRepository = categoryProductRepository;
         }
 
         public async Task<Product> Create(Product product)
         {
             if (!Validate(new ProductValidation(), product)) return null;
 
-            var restaurant = await _unitOfWork
-                .RepositoryFactory
-                .RestaurantRepository
+            var restaurant = await _restaurantRepository
                 .GetById(product.IdRestaurant);
 
             if (restaurant == null)
@@ -36,9 +44,7 @@ namespace IHunger.Service
                 return await Task.FromResult<Product>(null);
             }
 
-            var categoryProduct = await _unitOfWork
-                .RepositoryFactory
-                .CategoryProductRepository
+            var categoryProduct = await _categoryProductRepository
                 .GetById(product.IdCategoryProduct);
 
             if (categoryProduct == null)
@@ -47,12 +53,10 @@ namespace IHunger.Service
                 return await Task.FromResult<Product>(null);
             }
 
-            await _unitOfWork
-                .RepositoryFactory
-                .ProductRepository
+            await _productRepository
                 .Add(product);
 
-            if (await _unitOfWork.Commit())
+            if (await _productRepository.Commit())
             {
                 return await Task.FromResult(product);
             }
@@ -178,9 +182,7 @@ namespace IHunger.Service
                 }
             }
 
-            return await _unitOfWork
-                .RepositoryFactory
-                .ProductRepository
+            return await _productRepository
                 .Search(
                     filter,
                     ordeBy,
@@ -190,9 +192,7 @@ namespace IHunger.Service
 
         public async Task<Product> GetById(Guid id)
         {
-            return await _unitOfWork
-                .RepositoryFactory
-                .ProductRepository
+            return await _productRepository
                 .GetById(id);
         }
 
@@ -200,9 +200,7 @@ namespace IHunger.Service
         {
             if (!Validate(new ProductValidation(), product)) return null;
 
-            var productDB = await _unitOfWork
-                .RepositoryFactory
-                .ProductRepository
+            var productDB = await _productRepository
                 .GetById(product.Id);
 
             if (productDB == null)
@@ -213,10 +211,8 @@ namespace IHunger.Service
 
             if (product.CategoryProduct != null)
             {
-                var categoryProduct = await _unitOfWork
-                .RepositoryFactory
-                .CategoryProductRepository
-                .GetById(product.IdCategoryProduct);
+                var categoryProduct = await _categoryProductRepository
+                    .GetById(product.IdCategoryProduct);
 
                 if (categoryProduct == null)
                 {
@@ -261,12 +257,10 @@ namespace IHunger.Service
                 productDB.Image = product.Image;
             }
 
-            _unitOfWork
-                .RepositoryFactory
-                .ProductRepository
+            _productRepository
                 .Update(productDB);
 
-            if (await _unitOfWork.Commit())
+            if (await _productRepository.Commit())
             {
                 return await Task.FromResult(productDB);
             }
@@ -277,9 +271,7 @@ namespace IHunger.Service
 
         public async Task<Product> Delete(Guid id)
         {
-            var product = await _unitOfWork
-                .RepositoryFactory
-                .ProductRepository
+            var product = await _productRepository
                 .GetById(id);
 
             if (product == null)
@@ -288,12 +280,10 @@ namespace IHunger.Service
                 return await Task.FromResult<Product>(null);
             }
 
-            _unitOfWork
-                .RepositoryFactory
-                .ProductRepository
+            _productRepository
                 .Remove(id);
 
-            if (await _unitOfWork.Commit())
+            if (await _productRepository.Commit())
             {
                 return await Task.FromResult(product);
             }
@@ -304,9 +294,7 @@ namespace IHunger.Service
 
         public async Task<List<Product>> GetByRestaurant(Guid id)
         {
-            var restaurant = await _unitOfWork
-                .RepositoryFactory
-                .RestaurantRepository
+            var restaurant = await _restaurantRepository
                 .GetById(id);
 
             if(restaurant == null)
@@ -315,17 +303,13 @@ namespace IHunger.Service
                 return await Task.FromResult<List<Product>>(null);
             }
 
-            return await _unitOfWork
-                 .RepositoryFactory
-                 .ProductRepository
+            return await _productRepository
                  .GetByRestaurant(id);
         }
 
         public async Task<Product> GetByRestaurantByIdProduct(Guid idRestaurant, Guid idProduct)
         {
-            var restaurant = await _unitOfWork
-                .RepositoryFactory
-                .RestaurantRepository
+            var restaurant = await _restaurantRepository
                 .GetById(idRestaurant);
 
             if (restaurant == null)
@@ -334,9 +318,7 @@ namespace IHunger.Service
                 return await Task.FromResult<Product>(null);
             }
 
-            return await _unitOfWork
-                 .RepositoryFactory
-                 .ProductRepository
+            return await _productRepository
                  .GetByRestaurantByIdProduct(idRestaurant, idProduct);
         }
     }

@@ -1,5 +1,6 @@
 ﻿using IHunger.Domain.Interfaces;
 using IHunger.Domain.Notifications;
+using IHunger.WebAPI.ViewModels.Response;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System;
@@ -37,18 +38,10 @@ namespace IHunger.WebAPI.Controllers
         {
             if (ValidOperation())
             {
-                return Ok(new
-                {
-                    success = true,
-                    data = result
-                });
+                return Ok(new ResponseSuccessViewModel(true, result));
             }
 
-            return BadRequest(new
-            {
-                success = false,
-                errors = _notifier.GetNotifications().Select(n => n.message)
-            });
+            return BadRequest(new ResponseErrorViewModel(false, _notifier.GetNotifications().Select(n => n.message)));
         }
 
         protected ActionResult CustomResponse(ModelStateDictionary modelState)

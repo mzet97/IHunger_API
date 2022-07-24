@@ -1,4 +1,5 @@
 ﻿using IHunger.Domain.Interfaces;
+using IHunger.Domain.Interfaces.Repository;
 using IHunger.Domain.Interfaces.Services;
 using IHunger.Domain.Models;
 using IHunger.Infra.CrossCutting.Filters;
@@ -11,11 +12,14 @@ namespace IHunger.Service
 {
     public class OrderService : BaseService, IOrderService
     {
+        private readonly IOrderRepository _orderRepository;
+
         public OrderService(
-            INotifier notifier, 
-            IUnitOfWork unitOfWork) : 
-            base(notifier, unitOfWork)
+            IOrderRepository orderRepository,
+            INotifier notifier) : 
+            base(notifier)
         {
+            _orderRepository = orderRepository;
         }
 
         public Task<Order> Create(Order order)

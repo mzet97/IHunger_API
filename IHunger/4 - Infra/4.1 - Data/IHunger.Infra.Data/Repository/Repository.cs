@@ -46,17 +46,19 @@ namespace IHunger.Infra.Data.Repository
 
         public virtual async Task<TEntity> GetById(Guid id)
         {
-            return await DbSet.AsNoTracking().Where(x => x.Id == id).FirstOrDefaultAsync();
+            return await DbSet.FindAsync(id);
         }
 
         public virtual void Remove(Guid id)
         {
-            DbSet.Remove(new TEntity { Id = id });
+            var entity = DbSet.Find(id);
+            DbSet.Remove(entity);
         }
 
-        public virtual async Task<int> SaveChanges()
+        public virtual async Task<bool> Commit()
         {
-            return await Db.SaveChangesAsync();
+            var result = await Db.SaveChangesAsync();
+            return await Task.FromResult(result > 0);
         }
 
         public virtual async Task<List<TEntity>> Search(

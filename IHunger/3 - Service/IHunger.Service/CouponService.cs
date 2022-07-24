@@ -1,4 +1,5 @@
 ﻿using IHunger.Domain.Interfaces;
+using IHunger.Domain.Interfaces.Repository;
 using IHunger.Domain.Interfaces.Services;
 using IHunger.Domain.Models;
 using IHunger.Domain.Models.Validations;
@@ -12,19 +13,20 @@ namespace IHunger.Service
 {
     public class CouponService : BaseService, ICouponService
     {
+        private readonly ICouponRepository _couponRepository;
+
         public CouponService(
-            INotifier notifier, 
-            IUnitOfWork unitOfWork) : base(notifier, unitOfWork)
+            ICouponRepository couponRepository,
+            INotifier notifier) : base(notifier)
         {
+            _couponRepository = couponRepository;
         }
 
         public async Task<Coupon> Create(Coupon coupon)
         {
             if (!Validate(new CouponValidation(), coupon)) return null;
 
-            var coupons = await _unitOfWork
-                .RepositoryFactory
-                .CouponRepository
+            var coupons = await _couponRepository
                 .Search(x => x.Code == coupon.Code && x.ExpireAt < DateTime.Now);
 
             if (coupons != null && coupons.Any())
@@ -33,12 +35,10 @@ namespace IHunger.Service
                 return await Task.FromResult<Coupon>(null);
             }
 
-            await _unitOfWork
-                .RepositoryFactory
-                .CouponRepository
+            await _couponRepository
                 .Add(coupon);
 
-            if (await _unitOfWork.Commit())
+            if (await _couponRepository.Commit())
             {
                 return await Task.FromResult(coupon);
             }
@@ -51,23 +51,17 @@ namespace IHunger.Service
         {
             if (ative)
             {
-                return (List<Coupon>) await _unitOfWork
-                .RepositoryFactory
-                .CouponRepository
+                return (List<Coupon>) await _couponRepository
                 .Find(x => x.ExpireAt > DateTime.Now);
             }
 
-            return await _unitOfWork
-                 .RepositoryFactory
-                 .CouponRepository
+            return await _couponRepository
                  .GetAll();
         }
 
         public async Task<Coupon> GetById(Guid id)
         {
-            return await _unitOfWork
-                 .RepositoryFactory
-                 .CouponRepository
+            return await _couponRepository
                  .GetById(id);
         }
 
@@ -75,9 +69,7 @@ namespace IHunger.Service
         {
             if (!Validate(new CouponValidation(), coupon)) return null;
 
-            var couponDb = await _unitOfWork
-                .RepositoryFactory
-                .CouponRepository
+            var couponDb = await _couponRepository
                 .GetById(coupon.Id);
 
             if (couponDb == null)
@@ -101,12 +93,10 @@ namespace IHunger.Service
                 couponDb.Value = couponDb.Value;
             }
 
-            _unitOfWork
-                .RepositoryFactory
-                .CouponRepository
-                .Update(couponDb);
+            _couponRepository
+                 .Update(couponDb);
 
-            if (await _unitOfWork.Commit())
+            if (await _couponRepository.Commit())
             {
                 return await Task.FromResult<Coupon>(couponDb);
             }
@@ -117,9 +107,7 @@ namespace IHunger.Service
 
         public async Task<Coupon> Delete(Guid id)
         {
-            var coupon = await _unitOfWork
-                .RepositoryFactory
-                .CouponRepository
+            var coupon = await _couponRepository
                 .GetById(id);
 
             if (coupon == null)
@@ -128,12 +116,10 @@ namespace IHunger.Service
                 return await Task.FromResult<Coupon>(null);
             }
 
-            _unitOfWork
-                .RepositoryFactory
-                .CategoryProductRepository
+            _couponRepository
                 .Remove(id);
 
-            if (await _unitOfWork.Commit())
+            if (await _couponRepository.Commit())
             {
                 return await Task.FromResult(coupon);
             }

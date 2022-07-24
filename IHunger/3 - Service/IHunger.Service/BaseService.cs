@@ -12,12 +12,10 @@ namespace IHunger.Service
     public abstract class BaseService
     {
         private readonly INotifier _notifier;
-        protected readonly IUnitOfWork _unitOfWork;
 
-        protected BaseService(INotifier notifier, IUnitOfWork unitOfWork)
+        protected BaseService(INotifier notifier)
         {
             _notifier = notifier;
-            _unitOfWork = unitOfWork;
         }
 
         protected void NotifyError(ValidationResult validationResult)
