@@ -8,5 +8,6 @@ namespace IHunger.Infra.CrossCutting.Filters
 {
     public class OrderFilter : BaseFilter
     {
+        public Guid IdProfileUser { get; set; }
     }
 }

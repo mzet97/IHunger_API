@@ -422,6 +422,7 @@ namespace IHunger.Service
             if (profile != null)
             {
                 userToken.Profile = new ProfileViewModel();
+                userToken.Profile.Id = profile.Id.ToString();
                 userToken.Profile.BirthDate = profile.BirthDate;
                 userToken.Profile.Name = profile.Name;
                 userToken.Profile.LastName = profile.LastName;

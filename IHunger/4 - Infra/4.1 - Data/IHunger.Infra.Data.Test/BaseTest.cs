@@ -29,7 +29,7 @@ namespace IHunger.Infra.Data.Test
         {
             using (var context = ServiceProvider.GetService<DataIdentityDbContext>())
             {
-                context.Dispose();
+                context?.Dispose();
             }
         }
     }

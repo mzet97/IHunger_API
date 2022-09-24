@@ -94,12 +94,6 @@ namespace IHunger.WebAPI.Configuration
             CreateMap<OrderViewModel, Order>()
                 .ReverseMap();
 
-            CreateMap<Order, OrderCreatedViewModel>()
-                .ReverseMap();
-
-            CreateMap<OrderCreatedViewModel, Order>()
-                .ReverseMap();
-
         }
     }
 }

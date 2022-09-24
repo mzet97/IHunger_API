@@ -1,0 +1,12 @@
+﻿D:\TI\git\v2\IHunger_API\IHunger\4 - Infra\4.2 - CrossCutting\IHunger.Infra.CrossCutting\Extensions\AppSettings.cs
+D:\TI\git\v2\IHunger_API\IHunger\4 - Infra\4.2 - CrossCutting\IHunger.Infra.CrossCutting\Filters\BaseFilter.cs
+D:\TI\git\v2\IHunger_API\IHunger\4 - Infra\4.2 - CrossCutting\IHunger.Infra.CrossCutting\Filters\CategoryProductFilter.cs
+D:\TI\git\v2\IHunger_API\IHunger\4 - Infra\4.2 - CrossCutting\IHunger.Infra.CrossCutting\Filters\CategoryRestaurantFilter.cs
+D:\TI\git\v2\IHunger_API\IHunger\4 - Infra\4.2 - CrossCutting\IHunger.Infra.CrossCutting\Filters\OrderFilter.cs
+D:\TI\git\v2\IHunger_API\IHunger\4 - Infra\4.2 - CrossCutting\IHunger.Infra.CrossCutting\Filters\ProductFilter.cs
+D:\TI\git\v2\IHunger_API\IHunger\4 - Infra\4.2 - CrossCutting\IHunger.Infra.CrossCutting\Filters\RestaurantFilter.cs
+D:\TI\git\v2\IHunger_API\IHunger\4 - Infra\4.2 - CrossCutting\IHunger.Infra.CrossCutting\ViewModels\User\AddressViewModel.cs
+D:\TI\git\v2\IHunger_API\IHunger\4 - Infra\4.2 - CrossCutting\IHunger.Infra.CrossCutting\ViewModels\User\ClaimViewModel.cs
+D:\TI\git\v2\IHunger_API\IHunger\4 - Infra\4.2 - CrossCutting\IHunger.Infra.CrossCutting\ViewModels\User\LoginResponseViewModel.cs
+D:\TI\git\v2\IHunger_API\IHunger\4 - Infra\4.2 - CrossCutting\IHunger.Infra.CrossCutting\ViewModels\User\ProfileViewModel.cs
+D:\TI\git\v2\IHunger_API\IHunger\4 - Infra\4.2 - CrossCutting\IHunger.Infra.CrossCutting\ViewModels\User\UserTokenViewModel.cs

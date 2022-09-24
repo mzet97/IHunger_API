@@ -23,6 +23,7 @@ namespace IHunger.Infra.Data.Repository
             return await DbSet
                 .Include(x => x.AddressRestaurant)
                 .Include(x => x.CategoryRestaurant)
+                .Include(x => x.Comments)
                 .Where(x => x.Id == id)
                 .AsNoTracking()
                 .FirstOrDefaultAsync();
@@ -37,7 +38,10 @@ namespace IHunger.Infra.Data.Repository
             var query = DbSet.AsQueryable();
             Count = query.Count();
             int pages = 0;
-            query = query.Include(x => x.AddressRestaurant).Include(x => x.CategoryRestaurant).Include(x => x.Comments);
+            query = query
+                .Include(x => x.AddressRestaurant)
+                .Include(x => x.CategoryRestaurant)
+                .Include(x => x.Comments);
 
             if (predicate != null)
             {
