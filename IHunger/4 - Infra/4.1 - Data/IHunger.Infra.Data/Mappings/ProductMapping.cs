@@ -39,7 +39,7 @@ namespace IHunger.Infra.Data.Mappings
 
             builder.Property(p => p.Image)
                .IsRequired()
-               .HasColumnType("varchar(100)");
+               .HasColumnType("varchar(10000)");
 
             builder.HasMany(r => r.Itens)
                 .WithOne(c => c.Product)
@@ -47,7 +47,10 @@ namespace IHunger.Infra.Data.Mappings
 
             builder.Property(x => x.IdCategoryProduct).IsRequired();
 
-            builder.HasOne(x => x.CategoryProduct).WithMany().HasForeignKey(x => x.IdCategoryProduct);
+            builder
+                .HasOne(x => x.CategoryProduct)
+                .WithMany()
+                .HasForeignKey(x => x.IdCategoryProduct);
         }
     }
 }

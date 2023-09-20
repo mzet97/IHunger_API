@@ -14,6 +14,8 @@ namespace IHunger.Infra.Data
         private readonly DataIdentityDbContext _dbContext;
         public IRepositoryFactory RepositoryFactory { get; }
 
+        private bool disposed = false;
+
         public UnitOfWork(DataIdentityDbContext dbContext)
         {
             _dbContext = dbContext;
@@ -26,7 +28,6 @@ namespace IHunger.Infra.Data
             return await Task.FromResult(result > 0);
         }
 
-        private bool disposed = false;
         protected virtual void Dispose(bool disposing)
         {
             if (!this.disposed)

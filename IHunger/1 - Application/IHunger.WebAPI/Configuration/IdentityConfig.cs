@@ -1,9 +1,7 @@
 ﻿using IHunger.Domain.Models;
 using IHunger.Infra.CrossCutting.Extensions;
 using IHunger.Infra.Data.Context;
-using IHunger.WebAPI.Extensions;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -11,10 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace IHunger.WebAPI.Configuration
 {

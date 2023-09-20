@@ -2,12 +2,10 @@
 using IHunger.Domain.Models;
 using IHunger.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace IHunger.Infra.Data.Repository
@@ -21,8 +19,15 @@ namespace IHunger.Infra.Data.Repository
         public override async Task<Order> GetById(Guid id)
         {
             return await DbSet
-                .Include(x => x.Items)
-                .Include(x => x.ProfileUser)
+                .Include("Coupon")
+                .Include("ProfileUser")
+                .Include("Items")
+                .Include("Items.Product")
+                .Include("Items.Product.CategoryProduct")
+                .Include("Items.Product.Restaurant")
+                .Include("Items.Product.Restaurant.Comments")
+                .Include("Items.Product.Restaurant.AddressRestaurant")
+                .Include("Items.Product.Restaurant.CategoryRestaurant")
                 .Where(x => x.Id == id)
                 .AsNoTracking()
                 .FirstOrDefaultAsync();
@@ -38,8 +43,15 @@ namespace IHunger.Infra.Data.Repository
             Count = query.Count();
             int pages = 0;
             query = query
-                .Include(x => x.Items)
-                .Include(x => x.ProfileUser);
+                .Include("Coupon")
+                .Include("ProfileUser")
+                .Include("Items")
+                .Include("Items.Product")
+                .Include("Items.Product.CategoryProduct")
+                .Include("Items.Product.Restaurant")
+                .Include("Items.Product.Restaurant.Comments")
+                .Include("Items.Product.Restaurant.AddressRestaurant")
+                .Include("Items.Product.Restaurant.CategoryRestaurant");
 
             if (predicate != null)
             {

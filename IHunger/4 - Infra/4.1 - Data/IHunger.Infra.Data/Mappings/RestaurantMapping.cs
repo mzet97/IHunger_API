@@ -23,7 +23,7 @@ namespace IHunger.Infra.Data.Mappings
             
             builder.Property(r => r.Image)
                .IsRequired()
-               .HasColumnType("varchar(100)");
+               .HasColumnType("varchar(10000)");
 
             builder.HasMany(r => r.Products)
                 .WithOne(c => c.Restaurant)
