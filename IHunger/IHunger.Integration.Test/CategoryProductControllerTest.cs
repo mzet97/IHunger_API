@@ -1,13 +1,9 @@
 ﻿using IHunger.WebAPI.ViewModels.CategoryProduct;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -16,8 +12,8 @@ namespace IHunger.Integration.Test
     public class CategoryProductControllerTest : BaseIntegration
     {
 
-        [Fact(DisplayName = "Register user with success")]
-        [Trait("CategoryProductControllerTest", "Auth Controller Tests")]
+        [Fact(DisplayName = "CategoryProduct with success")]
+        [Trait("CategoryProductControllerTest", "CategoryProduct Controller Tests")]
         public async Task RegisterWithSuccess()
         {
             // Arrange

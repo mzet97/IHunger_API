@@ -116,7 +116,7 @@ namespace IHunger.Service
                     filter = PredicateBuilder.New<CategoryRestaurant>(true);
                 }
 
-                filter = filter.And(x => x.Id == CategoryRestaurantFilter.Id);
+                filter = filter.And(x => x.CreatedAt == CategoryRestaurantFilter.CreatedAt);
             }
 
             return await _categoryRestaurantRepository

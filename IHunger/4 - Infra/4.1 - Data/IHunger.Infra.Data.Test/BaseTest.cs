@@ -18,7 +18,7 @@ namespace IHunger.Infra.Data.Test
             var serviceCollection = new ServiceCollection();
 
             serviceCollection.AddDbContext<DataIdentityDbContext>(o =>
-                o.UseNpgsql($"Host=localhost;Port=5432;Pooling=true;Database=ihunger_test;User Id=postgres;Password=root;"),
+                o.UseNpgsql($"Host=localhost;Port=5432;Pooling=true;Database=ihunger;User Id=postgres;Password=dsv@123;"),
                   ServiceLifetime.Transient
             );
 
