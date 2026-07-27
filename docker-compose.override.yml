@@ -1,0 +1,17 @@
+version: '3.8'
+
+# ============================================
+# Development overrides
+# Usage: docker compose up
+# This file is loaded automatically by docker compose
+# ============================================
+
+services:
+  api:
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    volumes:
+      - ./IHunger:/src
+      - ~/.nuget/packages:/root/.nuget/packages
+    # Hot-reload support (uncomment if needed)
+    # command: dotnet watch --project /src/1\ -\ Application/IHunger.WebAPI/IHunger.WebAPI.csproj --urls http://+:5000

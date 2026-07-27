@@ -93,7 +93,7 @@ namespace IHunger.Service
                 return await Task.FromResult(commentDb);
             }
 
-            NotifyError("Error deleting entity");
+            NotifyError("Error updating entity");
             return await Task.FromResult<Comment>(null);
         }
 

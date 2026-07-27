@@ -78,19 +78,19 @@ namespace IHunger.Service
                 return await Task.FromResult<Coupon>(null);
             }
 
-            if (couponDb.Code != couponDb.Code)
+            if (couponDb.Code != coupon.Code)
             {
-                couponDb.Code = couponDb.Code;
+                couponDb.Code = coupon.Code;
             }
 
-            if (couponDb.ExpireAt != couponDb.ExpireAt)
+            if (couponDb.ExpireAt != coupon.ExpireAt)
             {
-                couponDb.ExpireAt = couponDb.ExpireAt;
+                couponDb.ExpireAt = coupon.ExpireAt;
             }
-            
-            if (couponDb.Value != couponDb.Value)
+
+            if (couponDb.Value != coupon.Value)
             {
-                couponDb.Value = couponDb.Value;
+                couponDb.Value = coupon.Value;
             }
 
             _couponRepository
@@ -101,7 +101,7 @@ namespace IHunger.Service
                 return await Task.FromResult<Coupon>(couponDb);
             }
 
-            NotifyError("Error deleting entity");
+            NotifyError("Error updating entity");
             return await Task.FromResult<Coupon>(null);
         }
 

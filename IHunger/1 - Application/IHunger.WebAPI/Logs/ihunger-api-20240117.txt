@@ -1,0 +1,298 @@
+2024-01-17T09:05:25.3146946-03:00  [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development. (4007092b)
+2024-01-17T09:05:25.4618249-03:00  [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2024-01-17T09:05:25.8191296-03:00  [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2024-01-17T09:05:25.9184316-03:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE \"__EFMigrationsHistory\" (
+    \"MigrationId\" character varying(150) NOT NULL,
+    \"ProductVersion\" character varying(32) NOT NULL,
+    CONSTRAINT \"PK___EFMigrationsHistory\" PRIMARY KEY (\"MigrationId\")
+);" (0723d8ff)
+2024-01-17T09:05:26.2543372-03:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');" (0723d8ff)
+2024-01-17T09:05:27.4701071-03:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT \"MigrationId\", \"ProductVersion\"
+FROM \"__EFMigrationsHistory\"
+ORDER BY \"MigrationId\";" (0723d8ff)
+2024-01-17T09:05:27.4794287-03:00  [INF] Applying migration '"20211125113632_Start"'. (0e2ac64d)
+2024-01-17T09:05:28.7921053-03:00  [INF] Executed DbCommand ("1,272"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AddressRestaurants\" (
+    \"Id\" uuid NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    \"Street\" varchar(80) NOT NULL,
+    \"District\" varchar(80) NOT NULL,
+    \"City\" varchar(80) NOT NULL,
+    \"County\" varchar(80) NOT NULL,
+    \"ZipCode\" varchar(15) NOT NULL,
+    \"Latitude\" varchar(80) NULL,
+    \"Longitude\" varchar(80) NULL,
+    CONSTRAINT \"PK_AddressRestaurants\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2024-01-17T09:05:28.8018154-03:00  [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AddressUsers\" (
+    \"Id\" uuid NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    \"Street\" varchar(80) NOT NULL,
+    \"District\" varchar(80) NOT NULL,
+    \"City\" varchar(80) NOT NULL,
+    \"County\" varchar(80) NOT NULL,
+    \"ZipCode\" varchar(15) NOT NULL,
+    \"Latitude\" varchar(80) NULL,
+    \"Longitude\" varchar(80) NULL,
+    CONSTRAINT \"PK_AddressUsers\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2024-01-17T09:05:30.2580332-03:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AspNetRoles\" (
+    \"Id\" uuid NOT NULL,
+    \"Name\" character varying(256) NULL,
+    \"NormalizedName\" character varying(256) NULL,
+    \"ConcurrencyStamp\" text NULL,
+    CONSTRAINT \"PK_AspNetRoles\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2024-01-17T09:05:32.3000242-03:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"CategoryProducts\" (
+    \"Id\" uuid NOT NULL,
+    \"Name\" varchar(50) NOT NULL,
+    \"Description\" varchar(200) NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_CategoryProducts\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2024-01-17T09:05:32.3059347-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"CategoryRestaurants\" (
+    \"Id\" uuid NOT NULL,
+    \"Name\" varchar(50) NOT NULL,
+    \"Description\" varchar(200) NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_CategoryRestaurants\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2024-01-17T09:05:34.1259372-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"Coupons\" (
+    \"Id\" uuid NOT NULL,
+    \"Code\" varchar(50) NOT NULL,
+    \"Value\" integer NOT NULL,
+    \"ExpireAt\" timestamp with time zone NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_Coupons\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2024-01-17T09:05:35.8460247-03:00  [INF] Executed DbCommand ("1,720"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"OrdersStatus\" (
+    \"Id\" uuid NOT NULL,
+    \"Name\" varchar(200) NOT NULL,
+    \"Number\" integer NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_OrdersStatus\" PRIMARY KEY (\"Id\")
+);" (0723d8ff)
+2024-01-17T09:05:35.8531283-03:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"ProfileUsers\" (
+    \"Id\" uuid NOT NULL,
+    \"Name\" varchar(80) NOT NULL,
+    \"LastName\" varchar(80) NOT NULL,
+    \"BirthDate\" timestamp with time zone NULL,
+    \"Type\" integer NOT NULL,
+    \"IdAddressUser\" uuid NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_ProfileUsers\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_ProfileUsers_AddressUsers_IdAddressUser\" FOREIGN KEY (\"IdAddressUser\") REFERENCES public.\"AddressUsers\" (\"Id\")
+);" (0723d8ff)
+2024-01-17T09:05:37.8681336-03:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AspNetRoleClaims\" (
+    \"Id\" integer GENERATED BY DEFAULT AS IDENTITY,
+    \"RoleId\" uuid NOT NULL,
+    \"ClaimType\" text NULL,
+    \"ClaimValue\" text NULL,
+    CONSTRAINT \"PK_AspNetRoleClaims\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_AspNetRoleClaims_AspNetRoles_RoleId\" FOREIGN KEY (\"RoleId\") REFERENCES public.\"AspNetRoles\" (\"Id\") ON DELETE CASCADE
+);" (0723d8ff)
+2024-01-17T09:05:39.4605265-03:00  [INF] Executed DbCommand ("1,592"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"Restaurant\" (
+    \"Id\" uuid NOT NULL,
+    \"Name\" varchar(50) NOT NULL,
+    \"Description\" varchar(200) NOT NULL,
+    \"Image\" varchar(100) NOT NULL,
+    \"IdCategoryRestaurant\" uuid NOT NULL,
+    \"IdAddressRestaurant\" uuid NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_Restaurant\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_Restaurant_AddressRestaurants_IdAddressRestaurant\" FOREIGN KEY (\"IdAddressRestaurant\") REFERENCES public.\"AddressRestaurants\" (\"Id\"),
+    CONSTRAINT \"FK_Restaurant_CategoryRestaurants_IdCategoryRestaurant\" FOREIGN KEY (\"IdCategoryRestaurant\") REFERENCES public.\"CategoryRestaurants\" (\"Id\")
+);" (0723d8ff)
+2024-01-17T09:05:41.3982419-03:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AspNetUsers\" (
+    \"Id\" uuid NOT NULL,
+    \"IdProfileUser\" uuid NOT NULL,
+    \"UserName\" character varying(256) NULL,
+    \"NormalizedUserName\" character varying(256) NULL,
+    \"Email\" character varying(256) NULL,
+    \"NormalizedEmail\" character varying(256) NULL,
+    \"EmailConfirmed\" boolean NOT NULL,
+    \"PasswordHash\" text NULL,
+    \"SecurityStamp\" text NULL,
+    \"ConcurrencyStamp\" text NULL,
+    \"PhoneNumber\" text NULL,
+    \"PhoneNumberConfirmed\" boolean NOT NULL,
+    \"TwoFactorEnabled\" boolean NOT NULL,
+    \"LockoutEnd\" timestamp with time zone NULL,
+    \"LockoutEnabled\" boolean NOT NULL,
+    \"AccessFailedCount\" integer NOT NULL,
+    CONSTRAINT \"PK_AspNetUsers\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_AspNetUsers_ProfileUsers_IdProfileUser\" FOREIGN KEY (\"IdProfileUser\") REFERENCES public.\"ProfileUsers\" (\"Id\")
+);" (0723d8ff)
+2024-01-17T09:05:42.8661371-03:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"Orders\" (
+    \"Id\" uuid NOT NULL,
+    \"Price\" DECIMAL NOT NULL,
+    \"OrderStatus\" integer NOT NULL,
+    \"IdCoupon\" uuid NULL,
+    \"IdProfileUser\" uuid NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_Orders\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_Orders_Coupons_IdCoupon\" FOREIGN KEY (\"IdCoupon\") REFERENCES public.\"Coupons\" (\"Id\"),
+    CONSTRAINT \"FK_Orders_ProfileUsers_IdProfileUser\" FOREIGN KEY (\"IdProfileUser\") REFERENCES public.\"ProfileUsers\" (\"Id\")
+);" (0723d8ff)
+2024-01-17T09:05:44.4581299-03:00  [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"Comment\" (
+    \"Id\" uuid NOT NULL,
+    \"Text\" varchar(200) NOT NULL,
+    \"Starts\" DECIMAL NOT NULL,
+    \"IdRestaurant\" uuid NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_Comment\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_Comment_Restaurant_IdRestaurant\" FOREIGN KEY (\"IdRestaurant\") REFERENCES public.\"Restaurant\" (\"Id\")
+);" (0723d8ff)
+2024-01-17T09:05:46.2907089-03:00  [INF] Executed DbCommand ("1,832"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"Products\" (
+    \"Id\" uuid NOT NULL,
+    \"Name\" varchar(50) NOT NULL,
+    \"Description\" varchar(200) NOT NULL,
+    \"Price\" DECIMAL NOT NULL,
+    \"Vegan\" boolean NOT NULL,
+    \"Vegetarian\" boolean NOT NULL,
+    \"Kosher\" boolean NOT NULL,
+    \"Image\" varchar(100) NOT NULL,
+    \"IdCategoryProduct\" uuid NOT NULL,
+    \"IdRestaurant\" uuid NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_Products\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_Products_CategoryProducts_IdCategoryProduct\" FOREIGN KEY (\"IdCategoryProduct\") REFERENCES public.\"CategoryProducts\" (\"Id\"),
+    CONSTRAINT \"FK_Products_Restaurant_IdRestaurant\" FOREIGN KEY (\"IdRestaurant\") REFERENCES public.\"Restaurant\" (\"Id\")
+);" (0723d8ff)
+2024-01-17T09:05:47.9781682-03:00  [INF] Executed DbCommand ("1,687"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AspNetUserClaims\" (
+    \"Id\" integer GENERATED BY DEFAULT AS IDENTITY,
+    \"UserId\" uuid NOT NULL,
+    \"ClaimType\" text NULL,
+    \"ClaimValue\" text NULL,
+    CONSTRAINT \"PK_AspNetUserClaims\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_AspNetUserClaims_AspNetUsers_UserId\" FOREIGN KEY (\"UserId\") REFERENCES public.\"AspNetUsers\" (\"Id\") ON DELETE CASCADE
+);" (0723d8ff)
+2024-01-17T09:05:47.9882060-03:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AspNetUserLogins\" (
+    \"LoginProvider\" character varying(128) NOT NULL,
+    \"ProviderKey\" character varying(128) NOT NULL,
+    \"ProviderDisplayName\" text NULL,
+    \"UserId\" uuid NOT NULL,
+    CONSTRAINT \"PK_AspNetUserLogins\" PRIMARY KEY (\"LoginProvider\", \"ProviderKey\"),
+    CONSTRAINT \"FK_AspNetUserLogins_AspNetUsers_UserId\" FOREIGN KEY (\"UserId\") REFERENCES public.\"AspNetUsers\" (\"Id\") ON DELETE CASCADE
+);" (0723d8ff)
+2024-01-17T09:05:49.9747727-03:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AspNetUserRoles\" (
+    \"UserId\" uuid NOT NULL,
+    \"RoleId\" uuid NOT NULL,
+    CONSTRAINT \"PK_AspNetUserRoles\" PRIMARY KEY (\"UserId\", \"RoleId\"),
+    CONSTRAINT \"FK_AspNetUserRoles_AspNetRoles_RoleId\" FOREIGN KEY (\"RoleId\") REFERENCES public.\"AspNetRoles\" (\"Id\") ON DELETE CASCADE,
+    CONSTRAINT \"FK_AspNetUserRoles_AspNetUsers_UserId\" FOREIGN KEY (\"UserId\") REFERENCES public.\"AspNetUsers\" (\"Id\") ON DELETE CASCADE
+);" (0723d8ff)
+2024-01-17T09:05:51.5100871-03:00  [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"AspNetUserTokens\" (
+    \"UserId\" uuid NOT NULL,
+    \"LoginProvider\" character varying(128) NOT NULL,
+    \"Name\" character varying(128) NOT NULL,
+    \"Value\" text NULL,
+    CONSTRAINT \"PK_AspNetUserTokens\" PRIMARY KEY (\"UserId\", \"LoginProvider\", \"Name\"),
+    CONSTRAINT \"FK_AspNetUserTokens_AspNetUsers_UserId\" FOREIGN KEY (\"UserId\") REFERENCES public.\"AspNetUsers\" (\"Id\") ON DELETE CASCADE
+);" (0723d8ff)
+2024-01-17T09:05:51.5204435-03:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE public.\"Itens\" (
+    \"Id\" uuid NOT NULL,
+    \"Price\" DECIMAL NOT NULL,
+    \"Quantity\" integer NOT NULL,
+    \"IdProduct\" uuid NOT NULL,
+    \"IdOrder\" uuid NOT NULL,
+    \"CreatedAt\" timestamp with time zone NOT NULL,
+    \"UpdatedAt\" timestamp with time zone NOT NULL,
+    CONSTRAINT \"PK_Itens\" PRIMARY KEY (\"Id\"),
+    CONSTRAINT \"FK_Itens_Orders_IdOrder\" FOREIGN KEY (\"IdOrder\") REFERENCES public.\"Orders\" (\"Id\"),
+    CONSTRAINT \"FK_Itens_Products_IdProduct\" FOREIGN KEY (\"IdProduct\") REFERENCES public.\"Products\" (\"Id\")
+);" (0723d8ff)
+2024-01-17T09:05:52.8458898-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_AspNetRoleClaims_RoleId\" ON public.\"AspNetRoleClaims\" (\"RoleId\");" (0723d8ff)
+2024-01-17T09:05:54.4419645-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE UNIQUE INDEX \"RoleNameIndex\" ON public.\"AspNetRoles\" (\"NormalizedName\");" (0723d8ff)
+2024-01-17T09:05:54.4477517-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_AspNetUserClaims_UserId\" ON public.\"AspNetUserClaims\" (\"UserId\");" (0723d8ff)
+2024-01-17T09:05:54.4538997-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_AspNetUserLogins_UserId\" ON public.\"AspNetUserLogins\" (\"UserId\");" (0723d8ff)
+2024-01-17T09:05:55.9098404-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_AspNetUserRoles_RoleId\" ON public.\"AspNetUserRoles\" (\"RoleId\");" (0723d8ff)
+2024-01-17T09:05:55.9158063-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"EmailIndex\" ON public.\"AspNetUsers\" (\"NormalizedEmail\");" (0723d8ff)
+2024-01-17T09:05:55.9218417-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_AspNetUsers_IdProfileUser\" ON public.\"AspNetUsers\" (\"IdProfileUser\");" (0723d8ff)
+2024-01-17T09:05:57.1259498-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE UNIQUE INDEX \"UserNameIndex\" ON public.\"AspNetUsers\" (\"NormalizedUserName\");" (0723d8ff)
+2024-01-17T09:05:57.1338501-03:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Comment_IdRestaurant\" ON public.\"Comment\" (\"IdRestaurant\");" (0723d8ff)
+2024-01-17T09:05:57.1398429-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Itens_IdOrder\" ON public.\"Itens\" (\"IdOrder\");" (0723d8ff)
+2024-01-17T09:05:58.3439228-03:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Itens_IdProduct\" ON public.\"Itens\" (\"IdProduct\");" (0723d8ff)
+2024-01-17T09:05:58.3498004-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Orders_IdCoupon\" ON public.\"Orders\" (\"IdCoupon\");" (0723d8ff)
+2024-01-17T09:05:58.3559653-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Orders_IdProfileUser\" ON public.\"Orders\" (\"IdProfileUser\");" (0723d8ff)
+2024-01-17T09:05:59.6159166-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Products_IdCategoryProduct\" ON public.\"Products\" (\"IdCategoryProduct\");" (0723d8ff)
+2024-01-17T09:05:59.6218499-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Products_IdRestaurant\" ON public.\"Products\" (\"IdRestaurant\");" (0723d8ff)
+2024-01-17T09:05:59.6279117-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_ProfileUsers_IdAddressUser\" ON public.\"ProfileUsers\" (\"IdAddressUser\");" (0723d8ff)
+2024-01-17T09:06:00.9118083-03:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Restaurant_IdAddressRestaurant\" ON public.\"Restaurant\" (\"IdAddressRestaurant\");" (0723d8ff)
+2024-01-17T09:06:00.9178354-03:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE INDEX \"IX_Restaurant_IdCategoryRestaurant\" ON public.\"Restaurant\" (\"IdCategoryRestaurant\");" (0723d8ff)
+2024-01-17T09:06:00.9192776-03:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"__EFMigrationsHistory\" (\"MigrationId\", \"ProductVersion\")
+VALUES ('20211125113632_Start', '6.0.1');" (0723d8ff)
+2024-01-17T09:06:02.0973577-03:00  [INF] Applying migration '"20220710210906_seed_OrderStatus"'. (0e2ac64d)
+2024-01-17T09:06:02.1148767-03:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"OrdersStatus\" (\"Id\", \"Name\", \"Number\", \"CreatedAt\", \"UpdatedAt\") VALUES('E21A5B6F-6318-46E9-B39B-65D94D06A663', 'WaitingForPayment', 1, NOW(), NOW());" (0723d8ff)
+2024-01-17T09:06:03.3114350-03:00  [INF] Executed DbCommand ("1,196"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"OrdersStatus\" (\"Id\", \"Name\", \"Number\", \"CreatedAt\", \"UpdatedAt\") VALUES('D0E1C037-A1C1-40F1-B716-915E64C77B75', 'Paid', 2, NOW(), NOW());" (0723d8ff)
+2024-01-17T09:06:03.3124002-03:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"OrdersStatus\" (\"Id\", \"Name\", \"Number\", \"CreatedAt\", \"UpdatedAt\") VALUES('BB7E3FD5-279D-4B16-B76F-18142C02F57F', 'Preparing', 3, NOW(), NOW());" (0723d8ff)
+2024-01-17T09:06:03.3132512-03:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"OrdersStatus\" (\"Id\", \"Name\", \"Number\", \"CreatedAt\", \"UpdatedAt\") VALUES('766E24DF-81EF-4516-9B1F-4E00D8B3E886', 'OutForDelivery', 4, NOW(), NOW());" (0723d8ff)
+2024-01-17T09:06:04.6559030-03:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"OrdersStatus\" (\"Id\", \"Name\", \"Number\", \"CreatedAt\", \"UpdatedAt\") VALUES('2343FCC2-E4B8-42C2-9AF8-B79C7375C48D', 'Delivered', 5, NOW(), NOW());" (0723d8ff)
+2024-01-17T09:06:04.6569263-03:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"__EFMigrationsHistory\" (\"MigrationId\", \"ProductVersion\")
+VALUES ('20220710210906_seed_OrderStatus', '6.0.1');" (0723d8ff)
+2024-01-17T09:06:05.5918573-03:00  [INF] Applying migration '"20230919192633_UpdateImageSize"'. (0e2ac64d)
+2024-01-17T09:06:05.6099875-03:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE public.\"Restaurant\" ALTER COLUMN \"Image\" TYPE varchar(10000);" (0723d8ff)
+2024-01-17T09:06:05.6109370-03:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""ALTER TABLE public.\"Products\" ALTER COLUMN \"Image\" TYPE varchar(10000);" (0723d8ff)
+2024-01-17T09:06:06.7170428-03:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"__EFMigrationsHistory\" (\"MigrationId\", \"ProductVersion\")
+VALUES ('20230919192633_UpdateImageSize', '6.0.1');" (0723d8ff)

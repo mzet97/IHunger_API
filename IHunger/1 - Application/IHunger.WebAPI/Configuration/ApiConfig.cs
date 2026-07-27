@@ -1,10 +1,10 @@
-﻿using IHunger.WebAPI.Extensions;
+using Asp.Versioning;
+using IHunger.WebAPI.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
 
 namespace IHunger.WebAPI.Configuration
 {
@@ -13,22 +13,24 @@ namespace IHunger.WebAPI.Configuration
         public static IServiceCollection AddApiConfig(this IServiceCollection services)
         {
             services.AddMemoryCache();
-            services.AddMiniProfiler(options => 
+            services.AddMiniProfiler(options =>
             {
                 options.RouteBasePath = "/profiler";
                 options.PopupRenderPosition = StackExchange.Profiling.RenderPosition.BottomLeft;
                 options.PopupShowTimeWithChildren = true;
             }).AddEntityFramework();
-            services.AddControllers();
+
+            services.AddControllers()
+                .AddNewtonsoftJson(options =>
+                    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
             services.AddApiVersioning(options =>
             {
                 options.AssumeDefaultVersionWhenUnspecified = true;
                 options.DefaultApiVersion = new ApiVersion(1, 0);
                 options.ReportApiVersions = true;
-            });
-
-            services.AddVersionedApiExplorer(options =>
+            })
+            .AddApiExplorer(options =>
             {
                 options.GroupNameFormat = "'v'VVV";
                 options.SubstituteApiVersionInUrl = true;
@@ -44,10 +46,9 @@ namespace IHunger.WebAPI.Configuration
                 options.AddPolicy("Development",
                     builder =>
                         builder
-                        .AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader());
-
+                            .AllowAnyOrigin()
+                            .AllowAnyMethod()
+                            .AllowAnyHeader());
 
                 options.AddPolicy("Production",
                     builder =>
@@ -55,20 +56,15 @@ namespace IHunger.WebAPI.Configuration
                             .WithMethods("GET")
                             .WithOrigins("http://zeitune.dev")
                             .SetIsOriginAllowedToAllowWildcardSubdomains()
-                            //.WithHeaders(HeaderNames.ContentType, "x-custom-header")
                             .AllowAnyHeader());
             });
-
-            services.AddControllers()
-                .AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
             return services;
         }
 
-        public static IApplicationBuilder UseApiConfig(this IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
+        public static IApplicationBuilder UseApiConfig(this IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseHttpLogging();
-
             app.UseMiniProfiler();
 
             if (env.IsDevelopment())

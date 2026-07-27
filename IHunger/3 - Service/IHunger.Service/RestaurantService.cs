@@ -48,7 +48,7 @@ namespace IHunger.Service
 
             if (categoryRestaurant == null)
             {
-                NotifyError("Not fround categoryRestaurant");
+                NotifyError("Not found categoryRestaurant");
                 return await Task.FromResult<Restaurant>(null);
             }
 
@@ -145,7 +145,7 @@ namespace IHunger.Service
                     filter = PredicateBuilder.New<Restaurant>(true);
                 }
 
-                filter = filter.And(x => x.Id == restaurantFilter.Id);
+                filter = filter.And(x => x.CreatedAt.Date == restaurantFilter.CreatedAt.Date);
             }
 
             return await _restaurantRepository
@@ -184,7 +184,7 @@ namespace IHunger.Service
 
                 if (categoryRestaurant == null)
                 {
-                    NotifyError("Not fround categoryRestaurant");
+                    NotifyError("Not found categoryRestaurant");
                     return await Task.FromResult<Restaurant>(null);
                 }
 
@@ -251,7 +251,7 @@ namespace IHunger.Service
                 return await Task.FromResult(restaurantDB);
             }
 
-            NotifyError("Error deleting entity");
+            NotifyError("Error updating entity");
             return await Task.FromResult<Restaurant>(null);
         }
 

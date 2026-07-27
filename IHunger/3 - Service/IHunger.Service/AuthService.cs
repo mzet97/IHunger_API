@@ -48,7 +48,6 @@ namespace IHunger.Service
             if (resultCreateUser.Succeeded)
             {
                 await AddClaims(user);
-                await _signInManager.SignInAsync(user, false);
                 return await GetJwt(user.Email);
             }
 
@@ -57,7 +56,7 @@ namespace IHunger.Service
                 NotifyError(error.Description);
             }
 
-            return await GetJwt(user.Email);
+            return null;
         }
 
         public async Task<LoginResponseViewModel> Login(string email, string password)

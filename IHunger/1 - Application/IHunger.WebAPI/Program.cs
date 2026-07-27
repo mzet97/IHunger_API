@@ -1,32 +1,28 @@
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using IHunger.WebAPI.Configuration;
 
-namespace IHunger.WebAPI
-{
-    public class Program
-    {
-        public static bool DisableProfilingResults { get; internal set; }
+var builder = WebApplication.CreateBuilder(args);
 
+// Configure logging
+builder.Logging.AddFile("Logs/ihunger-api-{Date}.txt");
 
-        public static void Main(string[] args)
-        {
-            CreateHostBuilder(args).Build().Run();
-        }
+// Configure services
+builder.Services.AddIdentityConfig(builder.Configuration);
+builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddApiConfig();
+builder.Services.AddSwaggerConfig();
+builder.Services.ResolveDependencies();
+builder.Services.AddHealthChecks();
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureLogging((hostingContext, builder) => {
-                    builder.AddFile("Logs/ihunger-api-{Date}.txt");
-                })
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
-    }
-}
+var app = builder.Build();
+
+// Configure middleware pipeline
+app.UseApiConfig(app.Environment);
+app.UseSwaggerConfig(app.Services.GetRequiredService<Asp.Versioning.ApiExplorer.IApiVersionDescriptionProvider>());
+
+// Health check endpoints
+app.MapHealthChecks("/health");
+
+app.Run();
+
+// Make Program accessible for integration tests
+public partial class Program { }

@@ -40,7 +40,7 @@ namespace IHunger.Service
 
             if (restaurant == null)
             {
-                NotifyError("Not fround restaurant");
+                NotifyError("Not found restaurant");
                 return await Task.FromResult<Product>(null);
             }
 
@@ -49,7 +49,7 @@ namespace IHunger.Service
 
             if (categoryProduct == null)
             {
-                NotifyError("Not fround categoryProduct");
+                NotifyError("Not found categoryProduct");
                 return await Task.FromResult<Product>(null);
             }
 
@@ -157,7 +157,7 @@ namespace IHunger.Service
                     filter = PredicateBuilder.New<Product>(true);
                 }
 
-                filter = filter.And(x => x.Id == productFilter.Id);
+                filter = filter.And(x => x.CreatedAt.Date == productFilter.CreatedAt.Date);
             }
 
             if (!string.IsNullOrWhiteSpace(productFilter.Order))
@@ -216,7 +216,7 @@ namespace IHunger.Service
 
                 if (categoryProduct == null)
                 {
-                    NotifyError("Not fround categoryProduct");
+                    NotifyError("Not found categoryProduct");
                     return await Task.FromResult<Product>(null);
                 }
 
@@ -265,7 +265,7 @@ namespace IHunger.Service
                 return await Task.FromResult(productDB);
             }
 
-            NotifyError("Error deleting entity");
+            NotifyError("Error updating entity");
             return await Task.FromResult<Product>(null);
         }
 
@@ -299,7 +299,7 @@ namespace IHunger.Service
 
             if(restaurant == null)
             {
-                NotifyError("Not fround Restaurant");
+                NotifyError("Not found Restaurant");
                 return await Task.FromResult<List<Product>>(null);
             }
 
@@ -314,7 +314,7 @@ namespace IHunger.Service
 
             if (restaurant == null)
             {
-                NotifyError("Not fround Restaurant");
+                NotifyError("Not found Restaurant");
                 return await Task.FromResult<Product>(null);
             }
 

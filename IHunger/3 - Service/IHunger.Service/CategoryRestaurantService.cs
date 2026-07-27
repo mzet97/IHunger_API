@@ -164,7 +164,7 @@ namespace IHunger.Service
                 return await Task.FromResult(categoryRestaurantDb);
             }
 
-            NotifyError("Error deleting entity");
+            NotifyError("Error updating entity");
             return await Task.FromResult<CategoryRestaurant>(null);
         }
 

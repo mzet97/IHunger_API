@@ -34,7 +34,7 @@ namespace IHunger.WebAPI.V1.Controllers
         }
 
         [HttpPost]
-        [ClaimsAuthorize("CategoryProduct", "Create")]
+        [ClaimsAuthorize("Coupon", "Create")]
         public async Task<ActionResult<CouponViewModel>> Create(CouponCreatedViewModel viewModel)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);
@@ -47,14 +47,14 @@ namespace IHunger.WebAPI.V1.Controllers
         }
 
         [HttpGet]
-        [ClaimsAuthorize("CategoryProduct", "Get")]
+        [ClaimsAuthorize("Coupon", "Get")]
         public async Task<IEnumerable<CouponViewModel>> GetAll([FromQuery] bool ative = true)
         {
             return _mapper.Map<IEnumerable<CouponViewModel>>(await _couponService.GetAll(ative));
         }
 
         [HttpGet("{id}")]
-        [ClaimsAuthorize("CategoryProduct", "Get")]
+        [ClaimsAuthorize("Coupon", "Get")]
         public async Task<CouponViewModel> GetById(Guid id)
         {
             return _mapper.Map<CouponViewModel>(await _couponService.GetById(id));
@@ -62,7 +62,7 @@ namespace IHunger.WebAPI.V1.Controllers
 
 
         [HttpPut("{id}")]
-        [ClaimsAuthorize("CategoryProduct", "Update")]
+        [ClaimsAuthorize("Coupon", "Update")]
         public async Task<ActionResult<CouponViewModel>> Update([FromRoute] Guid id, [FromBody] CouponViewModel viewModel)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);
@@ -76,7 +76,7 @@ namespace IHunger.WebAPI.V1.Controllers
         }
 
         [HttpDelete("{id}")]
-        [ClaimsAuthorize("CategoryProduct", "Delete")]
+        [ClaimsAuthorize("Coupon", "Delete")]
         public async Task<CouponViewModel> Delete(Guid id)
         {
             return _mapper.Map<CouponViewModel>(await _couponService.Delete(id));

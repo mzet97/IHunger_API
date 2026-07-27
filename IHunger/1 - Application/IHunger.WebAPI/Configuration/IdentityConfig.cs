@@ -1,4 +1,4 @@
-﻿using IHunger.Domain.Models;
+using IHunger.Domain.Models;
 using IHunger.Infra.CrossCutting.Extensions;
 using IHunger.Infra.Data.Context;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using System;
 using System.Text;
 
 namespace IHunger.WebAPI.Configuration
@@ -18,18 +18,16 @@ namespace IHunger.WebAPI.Configuration
         public static IServiceCollection AddIdentityConfig(this IServiceCollection services,
            IConfiguration configuration)
         {
-            services.AddLogging(loggingBuilder =>
+            services.AddDbContext<DataIdentityDbContext>((serviceProvider, options) =>
             {
-                loggingBuilder.AddConsole()
-                    .AddFilter(DbLoggerCategory.Database.Command.Name, LogLevel.Information);
-                loggingBuilder.AddDebug();
-            });
-
-            services.AddDbContext<DataIdentityDbContext>(options =>
-            {
-                //options.UseLazyLoadingProxies();
                 options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
-                options.EnableSensitiveDataLogging(true);
+
+                // Only enable sensitive data logging in Development
+                var env = serviceProvider.GetService<IHostEnvironment>();
+                if (env?.IsDevelopment() == true)
+                {
+                    options.EnableSensitiveDataLogging();
+                }
             });
 
             services.AddDefaultIdentity<User>(options =>
@@ -55,7 +53,7 @@ namespace IHunger.WebAPI.Configuration
             services.Configure<AppSettings>(appSettingsSection);
 
             var appSettings = appSettingsSection.Get<AppSettings>();
-            var key = Encoding.ASCII.GetBytes(appSettings.Secret);
+            var key = Encoding.ASCII.GetBytes(appSettings!.Secret);
 
             services.AddAuthentication(options =>
             {
@@ -63,7 +61,7 @@ namespace IHunger.WebAPI.Configuration
                 options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(options =>
             {
-                options.RequireHttpsMetadata = true;
+                options.RequireHttpsMetadata = false; // Allow HTTP in Docker
                 options.SaveToken = true;
                 options.TokenValidationParameters = new TokenValidationParameters
                 {

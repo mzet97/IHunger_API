@@ -66,7 +66,7 @@ namespace IHunger.WebAPI.V1.Controllers
         }
 
         [HttpPut("{id}")]
-        [ClaimsAuthorize("Restaurant", "Update")]
+        [ClaimsAuthorize("Order", "Update")]
         public async Task<ActionResult<OrderViewModel>> Update([FromRoute] Guid id, [FromBody] OrderViewModel viewModel)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);
@@ -80,31 +80,36 @@ namespace IHunger.WebAPI.V1.Controllers
         }
 
         [HttpDelete("{id}")]
-        [ClaimsAuthorize("Restaurant", "Delete")]
+        [ClaimsAuthorize("Order", "Delete")]
         public async Task<OrderViewModel> Delete(Guid id)
         {
             return _mapper.Map<OrderViewModel>(await _orderService.Delete(id));
         }
 
         [HttpPut("{id}/status/{status}")]
-        [ClaimsAuthorize("Order", "Get")]
-        public async Task<OrderViewModel> UpdateStatus([FromRoute] Guid id, [FromRoute] int status)
+        [ClaimsAuthorize("Order", "Update")]
+        public async Task<ActionResult<OrderViewModel>> UpdateStatus([FromRoute] Guid id, [FromRoute] int status)
         {
-            return _mapper.Map<OrderViewModel>(await _orderService.GetById(id));
+            var entity = await _orderService.UpdateStatus(id, (IHunger.Domain.Enumeration.TypeOrderStatus)status);
+            return CustomResponse(_mapper.Map<OrderViewModel>(entity));
         }
 
         [HttpPut("{idOrder}/itens/{idItem}")]
-        [ClaimsAuthorize("Order", "Get")]
-        public async Task<OrderViewModel> CreateUpdateItem([FromRoute] Guid idOrder, [FromRoute] int idItem)
+        [ClaimsAuthorize("Order", "Update")]
+        public async Task<ActionResult<OrderViewModel>> CreateUpdateItem([FromRoute] Guid idOrder, [FromRoute] Guid idItem, [FromBody] ItemCreatedViewModel itemViewModel)
         {
-            return _mapper.Map<OrderViewModel>(await _orderService.GetById(idOrder));
+            var item = _mapper.Map<Item>(itemViewModel);
+            item.Id = idItem;
+            var entity = await _orderService.AddItem(idOrder, item);
+            return CustomResponse(_mapper.Map<OrderViewModel>(entity));
         }
 
         [HttpDelete("{idOrder}/itens/{idItem}")]
-        [ClaimsAuthorize("Order", "Get")]
-        public async Task<OrderViewModel> DeleteItem([FromRoute] Guid idOrder, [FromRoute] int idItem)
+        [ClaimsAuthorize("Order", "Delete")]
+        public async Task<ActionResult<OrderViewModel>> DeleteItem([FromRoute] Guid idOrder, [FromRoute] Guid idItem)
         {
-            return _mapper.Map<OrderViewModel>(await _orderService.GetById(idOrder));
+            var entity = await _orderService.RemoveItem(idOrder, idItem);
+            return CustomResponse(_mapper.Map<OrderViewModel>(entity));
         }
     }
 }

@@ -1,0 +1,732 @@
+2024-01-27T15:07:41.2620852-03:00  [INF] User profile is available. Using '"C:\Users\mathe\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2024-01-27T15:07:42.4231200-03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-01-27T15:07:42.4251861-03:00  [INF] Hosting environment: "Development" (c3307c92)
+2024-01-27T15:07:42.4270079-03:00  [INF] Content root path: "D:\TI\git\v2\IHunger_API\IHunger\1 - Application\IHunger.WebAPI" (b5d60022)
+2024-01-27T15:07:42.4999693-03:00 40000002-0005-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger - - (ca22a1cb)
+2024-01-27T15:07:42.7773934-03:00 40000002-0005-fe00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: close
+Cookie: [Redacted]
+Host: localhost:44372
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+dnt: 1
+upgrade-insecure-requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2024-01-27T15:07:43.2535614-03:00 40000002-0005-fe00-b63f-84710c7967bb [INF] Response:
+StatusCode: 301
+X-MiniProfiler-Ids: [Redacted]
+Location: swagger/index.html (999214c4)
+2024-01-27T15:07:43.2948945-03:00 40000002-0005-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger - - - 301 - - 798.6166ms (791a596a)
+2024-01-27T15:07:43.2981473-03:00 40000002-0007-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/index.html - - (ca22a1cb)
+2024-01-27T15:07:43.3110028-03:00 40000002-0007-fd00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/index.html
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: close
+Cookie: [Redacted]
+Host: localhost:44372
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
+dnt: 1
+upgrade-insecure-requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted] (893de8da)
+2024-01-27T15:07:43.3621022-03:00 40000002-0007-fd00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: text/html;charset=utf-8 (999214c4)
+2024-01-27T15:07:43.3625602-03:00 40000002-0007-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/index.html - - - 200 - text/html;charset=utf-8 64.2557ms (791a596a)
+2024-01-27T15:07:43.3937247-03:00 40000002-000c-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/swagger-ui.css - - (ca22a1cb)
+2024-01-27T15:07:43.3963791-03:00 40000002-000c-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/swagger-ui.css
+Accept: text/css,*/*;q=0.1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: close
+Cookie: [Redacted]
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2024-01-27T15:07:43.4082859-03:00 40000006-000b-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/swagger-ui-bundle.js - - (ca22a1cb)
+2024-01-27T15:07:43.4108269-03:00 40000006-000b-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/swagger-ui-bundle.js
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: close
+Cookie: [Redacted]
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2024-01-27T15:07:43.4116176-03:00 40000002-000c-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' (27b0a520)
+2024-01-27T15:07:43.4140779-03:00 40000002-000c-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: text/css
+Last-Modified: Sat, 16 Oct 2021 12:54:30 GMT
+ETag: [Redacted]
+Accept-Ranges: bytes
+Content-Length: 143632 (999214c4)
+2024-01-27T15:07:43.4164033-03:00 40000002-000c-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/swagger-ui.css - - - 200 143632 text/css 21.6313ms (791a596a)
+2024-01-27T15:07:43.4194738-03:00 40000006-000b-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"' (27b0a520)
+2024-01-27T15:07:43.4218461-03:00 40000006-000b-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/javascript
+Last-Modified: Sat, 16 Oct 2021 12:54:30 GMT
+ETag: [Redacted]
+Accept-Ranges: bytes
+Content-Length: 1092889 (999214c4)
+2024-01-27T15:07:43.4394683-03:00 40000006-000b-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 31.1521ms (791a596a)
+2024-01-27T15:07:43.4595919-03:00 4000000e-0009-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/swagger-ui-standalone-preset.js - - (ca22a1cb)
+2024-01-27T15:07:43.4621501-03:00 4000000e-0009-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/swagger-ui-standalone-preset.js
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: close
+Cookie: [Redacted]
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2024-01-27T15:07:43.4639464-03:00 4000000e-0009-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"' (27b0a520)
+2024-01-27T15:07:43.4664730-03:00 4000000e-0009-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/javascript
+Last-Modified: Sat, 16 Oct 2021 12:54:30 GMT
+ETag: [Redacted]
+Accept-Ranges: bytes
+Content-Length: 337162 (999214c4)
+2024-01-27T15:07:43.4676404-03:00 40000002-0009-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/_framework/aspnetcore-browser-refresh.js - - (ca22a1cb)
+2024-01-27T15:07:43.4724668-03:00 4000000e-0009-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 10.8148ms (791a596a)
+2024-01-27T15:07:43.5302519-03:00 40000002-0009-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/_framework/aspnetcore-browser-refresh.js - - - 200 13764 application/javascript;+charset=utf-8 62.4325ms (791a596a)
+2024-01-27T15:07:43.5856935-03:00 40000007-0013-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/_vs/browserLink - - (ca22a1cb)
+2024-01-27T15:07:43.7657129-03:00 40000007-0013-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 180.0002ms (791a596a)
+2024-01-27T15:07:43.8325370-03:00 40000004-0007-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/v1/swagger.json - - (ca22a1cb)
+2024-01-27T15:07:43.8351381-03:00 40000004-0007-fd00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/v1/swagger.json
+Accept: application/json,*/*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: close
+Cookie: [Redacted]
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2024-01-27T15:07:43.8455111-03:00 4000000c-000a-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2 GET https://localhost:44372/swagger/favicon-32x32.png - - (ca22a1cb)
+2024-01-27T15:07:43.8481566-03:00 4000000c-000a-ff00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /swagger/favicon-32x32.png
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: close
+Cookie: [Redacted]
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2024-01-27T15:07:43.8487512-03:00 4000000c-000a-ff00-b63f-84710c7967bb [INF] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' (27b0a520)
+2024-01-27T15:07:43.8512091-03:00 4000000c-000a-ff00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: image/png
+Last-Modified: Sat, 16 Oct 2021 12:54:30 GMT
+ETag: [Redacted]
+Accept-Ranges: bytes
+Content-Length: 628 (999214c4)
+2024-01-27T15:07:43.8513154-03:00 4000000c-000a-ff00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/favicon-32x32.png - - - 200 628 image/png 5.8307ms (791a596a)
+2024-01-27T15:07:43.9519087-03:00 40000004-0007-fd00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Content-Type: application/json;charset=utf-8 (999214c4)
+2024-01-27T15:07:43.9529426-03:00 40000004-0007-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 GET https://localhost:44372/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 120.4420ms (791a596a)
+2024-01-27T15:11:52.2089420-03:00 40000002-0011-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 OPTIONS https://localhost:44372/api/v1/auth/login - - (ca22a1cb)
+2024-01-27T15:11:52.2112607-03:00 40000002-0011-fd00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/login
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
+access-control-request-method: [Redacted]
+access-control-request-headers: [Redacted]
+origin: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2024-01-27T15:11:52.2183127-03:00 40000002-0011-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2024-01-27T15:11:52.2209159-03:00 40000002-0011-fd00-b63f-84710c7967bb [INF] Response:
+StatusCode: 204
+X-MiniProfiler-Ids: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted] (999214c4)
+2024-01-27T15:11:52.2211179-03:00 40000002-0011-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 OPTIONS https://localhost:44372/api/v1/auth/login - - - 204 - - 12.3689ms (791a596a)
+2024-01-27T15:11:52.2285138-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/auth/login application/json 50 (ca22a1cb)
+2024-01-27T15:11:52.2302241-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/login
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Authorization: [Redacted]
+Connection: close
+Content-Length: 50
+Content-Type: application/json
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2024-01-27T15:11:52.2303888-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2024-01-27T15:11:52.3080229-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] "Bearer" was not authenticated. Failure message: "No SecurityTokenValidator available for token." (48071232)
+2024-01-27T15:11:52.3251146-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)"' (500cc934)
+2024-01-27T15:11:52.3513823-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Route matched with "{action = \"Login\", controller = \"Auth\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Login(IHunger.WebAPI.ViewModels.User.LoginUserViewModel)" on controller "IHunger.WebAPI.V1.Controllers.AuthController" ("IHunger.WebAPI"). (122b2fdf)
+2024-01-27T15:11:54.3843671-03:00 40000004-0007-fc00-b63f-84710c7967bb [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development. (4007092b)
+2024-01-27T15:11:54.5515321-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2024-01-27T15:11:55.0835644-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("54"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"ProfileUsers\" AS p" (0723d8ff)
+2024-01-27T15:11:55.2099071-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2024-01-27T15:11:55.3444194-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("30"ms) [Parameters=["@__normalizedUserName_0='ADMIN@ADMIN.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T15:11:55.5288078-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=["@__user_Id_0='dd3a147b-3c06-41d0-8184-b8d472bc0a13'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ClaimType\", a.\"ClaimValue\", a.\"UserId\"
+FROM public.\"AspNetUserClaims\" AS a
+WHERE a.\"UserId\" = @__user_Id_0" (0723d8ff)
+2024-01-27T15:11:55.5784815-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='dd3a147b-3c06-41d0-8184-b8d472bc0a13'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM public.\"AspNetUserRoles\" AS a
+INNER JOIN public.\"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @__userId_0" (0723d8ff)
+2024-01-27T15:11:55.5890383-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2024-01-27T15:11:55.6007640-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedEmail_0='ADMIN@ADMIN.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T15:11:55.6091708-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='dd3a147b-3c06-41d0-8184-b8d472bc0a13'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ClaimType\", a.\"ClaimValue\", a.\"UserId\"
+FROM public.\"AspNetUserClaims\" AS a
+WHERE a.\"UserId\" = @__user_Id_0" (0723d8ff)
+2024-01-27T15:11:55.6156107-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='dd3a147b-3c06-41d0-8184-b8d472bc0a13'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM public.\"AspNetUserRoles\" AS a
+INNER JOIN public.\"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @__userId_0" (0723d8ff)
+2024-01-27T15:11:55.7251385-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='bca41f24-754e-4fdb-8f33-b854d151a4ce'"], CommandType='Text', CommandTimeout='30']"
+""SELECT p.\"Id\", p.\"BirthDate\", p.\"CreatedAt\", p.\"IdAddressUser\", p.\"LastName\", p.\"Name\", p.\"Type\", p.\"UpdatedAt\", a.\"Id\", a.\"City\", a.\"County\", a.\"CreatedAt\", a.\"District\", a.\"Latitude\", a.\"Longitude\", a.\"Street\", a.\"UpdatedAt\", a.\"ZipCode\"
+FROM public.\"ProfileUsers\" AS p
+INNER JOIN public.\"AddressUsers\" AS a ON p.\"IdAddressUser\" = a.\"Id\"
+WHERE p.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2024-01-27T15:11:55.7358908-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 522.2733ms. (50a9e262)
+2024-01-27T15:11:55.7419477-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Executing "OkObjectResult", writing value of type '"IHunger.WebAPI.ViewModels.Response.ResponseSuccessViewModel"'. (605b4265)
+2024-01-27T15:11:55.7869040-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)" in 3432.0746ms (afa2e885)
+2024-01-27T15:11:55.7874599-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.AuthController.Login (IHunger.WebAPI)"' (99874f2b)
+2024-01-27T15:11:55.7915661-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Set-Cookie: [Redacted]
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 3045
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2024-01-27T15:11:55.7955841-03:00 40000004-0007-fc00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/auth/login application/json 50 - 200 3045 application/json;+charset=utf-8 3567.0898ms (791a596a)
+2024-01-27T16:25:33.2263468-03:00 40000004-000a-fe00-b63f-84710c7967bb [INF] Request starting HTTP/2 OPTIONS https://localhost:44372/api/v1/auth/register - - (ca22a1cb)
+2024-01-27T16:25:33.2282177-03:00 40000004-000a-fe00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: OPTIONS
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/register
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Connection: close
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
+access-control-request-method: [Redacted]
+access-control-request-headers: [Redacted]
+origin: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2024-01-27T16:25:33.2285067-03:00 40000004-000a-fe00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2024-01-27T16:25:33.2304484-03:00 40000004-000a-fe00-b63f-84710c7967bb [INF] Response:
+StatusCode: 204
+X-MiniProfiler-Ids: [Redacted]
+Access-Control-Allow-Origin: [Redacted]
+Access-Control-Allow-Headers: [Redacted]
+Access-Control-Allow-Methods: [Redacted] (999214c4)
+2024-01-27T16:25:33.2310375-03:00 40000004-000a-fe00-b63f-84710c7967bb [INF] Request finished HTTP/2 OPTIONS https://localhost:44372/api/v1/auth/register - - - 204 - - 4.7480ms (791a596a)
+2024-01-27T16:25:33.2365622-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2 POST https://localhost:44372/api/v1/auth/register application/json 362 (ca22a1cb)
+2024-01-27T16:25:33.2381288-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/v1/auth/register
+Accept: application/json, text/plain, */*
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
+Authorization: [Redacted]
+Connection: close
+Content-Length: 362
+Content-Type: application/json
+Host: localhost:44372
+Referer: [Redacted]
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0
+sec-ch-ua: [Redacted]
+dnt: 1
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+origin: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted] (893de8da)
+2024-01-27T16:25:33.2382559-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] CORS policy execution successful. (5409d6ef)
+2024-01-27T16:25:33.2400001-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] "Bearer" was not authenticated. Failure message: "No SecurityTokenValidator available for token." (48071232)
+2024-01-27T16:25:33.2400580-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executing endpoint '"IHunger.WebAPI.V1.Controllers.AuthController.Register (IHunger.WebAPI)"' (500cc934)
+2024-01-27T16:25:33.2420351-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Route matched with "{action = \"Register\", controller = \"Auth\", page = \"\", area = \"\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Register(IHunger.WebAPI.ViewModels.User.RegisterUserViewModel)" on controller "IHunger.WebAPI.V1.Controllers.AuthController" ("IHunger.WebAPI"). (122b2fdf)
+2024-01-27T16:25:33.2806428-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Entity Framework Core "6.0.1" initialized '"DataIdentityDbContext"' using provider '"Npgsql.EntityFrameworkCore.PostgreSQL":"6.0.2+854d2438884c0bf3a4ba8ccde2c47f7ba1ea3a4c"' with options: "SensitiveDataLoggingEnabled " (d2805559)
+2024-01-27T16:25:33.2954323-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)::INT
+FROM public.\"ProfileUsers\" AS p" (0723d8ff)
+2024-01-27T16:25:33.3121847-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executing action method "IHunger.WebAPI.V1.Controllers.AuthController.Register (IHunger.WebAPI)" - Validation state: Valid (dad538d7)
+2024-01-27T16:25:33.3567019-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.3685347-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.5298685-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@p0='ff0059e1-3b7a-4e1c-978d-46e838a79944', @p1='Rio de Janeiro' (Nullable = false), @p2='Brazil' (Nullable = false), @p3='2024-01-27T16:25:33.4568982-03:00' (DbType = DateTime), @p4='Méier' (Nullable = false), @p5='123', @p6='123', @p7='R. Dr. Pache de Faria' (Nullable = false), @p8='2024-01-27T16:25:33.4572305-03:00' (DbType = DateTime), @p9='20710-020' (Nullable = false)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AddressUsers\" (\"Id\", \"City\", \"County\", \"CreatedAt\", \"District\", \"Latitude\", \"Longitude\", \"Street\", \"UpdatedAt\", \"ZipCode\")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);" (0723d8ff)
+2024-01-27T16:25:33.5420345-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=["@p10='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p11='1997-09-17T03:00:00.0000000Z' (Nullable = true) (DbType = DateTime), @p12='2024-01-27T16:25:33.4534854-03:00' (DbType = DateTime), @p13='ff0059e1-3b7a-4e1c-978d-46e838a79944', @p14='Zeitune' (Nullable = false), @p15='Matheus' (Nullable = false), @p16='2', @p17='2024-01-27T16:25:33.4567892-03:00' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"ProfileUsers\" (\"Id\", \"BirthDate\", \"CreatedAt\", \"IdAddressUser\", \"LastName\", \"Name\", \"Type\", \"UpdatedAt\")
+VALUES (@p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);" (0723d8ff)
+2024-01-27T16:25:33.5494641-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=["@p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p19='0', @p20='20101db1-3820-4395-b359-6d4fd89d8798', @p21='matheus.zeitune.developer@gmail.com', @p22='True', @p23='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p24='True', @p25=NULL (DbType = DateTimeOffset), @p26='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p27='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p28='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p29=NULL, @p30='False', @p31='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p32='False', @p33='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUsers\" (\"Id\", \"AccessFailedCount\", \"ConcurrencyStamp\", \"Email\", \"EmailConfirmed\", \"IdProfileUser\", \"LockoutEnabled\", \"LockoutEnd\", \"NormalizedEmail\", \"NormalizedUserName\", \"PasswordHash\", \"PhoneNumber\", \"PhoneNumberConfirmed\", \"SecurityStamp\", \"TwoFactorEnabled\", \"UserName\")
+VALUES (@p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31, @p32, @p33);" (0723d8ff)
+2024-01-27T16:25:33.5913694-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.5975078-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.6242779-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@p0='Type', @p1='Client', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='87386f40-dde6-4e7a-b7c9-ee3fef9b3103', @p19='20101db1-3820-4395-b359-6d4fd89d8798', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.6486920-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.6539063-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.6595903-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='CategoryProduct', @p1='Get', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='46f3e8c6-4a48-4724-a863-16ad9b9e6b59', @p19='87386f40-dde6-4e7a-b7c9-ee3fef9b3103', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.6710391-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.6763627-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.6822945-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='CategoryRestaurant', @p1='Get', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='feb27622-22ae-47c4-9b49-40a79e007cb2', @p19='46f3e8c6-4a48-4724-a863-16ad9b9e6b59', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.6906264-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.6971074-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.7033273-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='Coupon', @p1='Get', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='33e2205f-9879-47c0-8f47-2732f7d9450b', @p19='feb27622-22ae-47c4-9b49-40a79e007cb2', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.7112003-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.7178888-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.7244345-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='Product', @p1='Get', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='51504e0b-85bb-4ec1-a72f-18b8de6e0b5b', @p19='33e2205f-9879-47c0-8f47-2732f7d9450b', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.7326744-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.7382299-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.7438214-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='OrderStatus', @p1='Get', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='4781f207-f462-4dc1-bdaf-7dd1203aa21a', @p19='51504e0b-85bb-4ec1-a72f-18b8de6e0b5b', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.7524879-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.7581865-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.7644029-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='Restaurant', @p1='Get', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='cc23c41a-296c-4a64-9aef-7724cfc68baa', @p19='4781f207-f462-4dc1-bdaf-7dd1203aa21a', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.7725462-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.7783129-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.7840566-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='Item', @p1='Create', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='937ed2b1-8a92-4866-a72b-d250a82efb41', @p19='cc23c41a-296c-4a64-9aef-7724cfc68baa', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.7925719-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.7978969-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.8035843-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='Item', @p1='Get', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='12a181bb-8b29-4431-924d-4e311784e28f', @p19='937ed2b1-8a92-4866-a72b-d250a82efb41', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.8129421-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.8192329-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.8254022-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='Item', @p1='Update', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='f6ccef91-cb99-4d05-abe8-a51cb3fd4833', @p19='12a181bb-8b29-4431-924d-4e311784e28f', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.8331219-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.8386901-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.8443853-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='Item', @p1='Delete', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='77b80830-5a7d-49ac-a22b-5675e341fc9d', @p19='f6ccef91-cb99-4d05-abe8-a51cb3fd4833', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.8523165-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.8580619-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.8641426-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='Order', @p1='Create', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='8ab6cb82-be11-46f5-81c2-415c03a3dfcb', @p19='77b80830-5a7d-49ac-a22b-5675e341fc9d', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.8725011-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.8779060-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.8836402-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='Order', @p1='Get', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='7c48de74-87cf-4b7f-838e-7babcbad68b6', @p19='8ab6cb82-be11-46f5-81c2-415c03a3dfcb', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.8907410-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.8965108-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.9019195-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='Order', @p1='Update', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='ab9e270a-abe7-43d3-ace4-52fbac188c95', @p19='7c48de74-87cf-4b7f-838e-7babcbad68b6', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.9111083-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.9171956-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.9243231-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='Order', @p1='Delete', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='823cca64-8ef2-4610-89f7-514b341584b7', @p19='ab9e270a-abe7-43d3-ace4-52fbac188c95', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.9327747-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.9388573-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.9442487-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='Profile', @p1='Get', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='3ae621d0-d04e-43a2-aef0-090947da6295', @p19='823cca64-8ef2-4610-89f7-514b341584b7', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.9526265-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedUserName\" = @__normalizedUserName_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:33.9584084-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.9642754-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='Profile', @p1='Update', @p2='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p18='2214b5bc-e400-4e71-bbfa-98fff93b5dcd', @p3='0', @p4='cc11c177-2022-4402-a9f9-c7ffe1a24286', @p19='3ae621d0-d04e-43a2-aef0-090947da6295', @p5='matheus.zeitune.developer@gmail.com', @p6='True', @p7='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4', @p8='True', @p9=NULL (DbType = DateTimeOffset), @p10='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p11='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM', @p12='AQAAAAEAACcQAAAAECcbQuh94b7COHO6BreEqFmlcqIVMZB4JTGQzMFucTJpGCco/URoUr9bvclQ2m8M9g==', @p13=NULL, @p14='False', @p15='JL5OLKJ7XOA2FIR6PIM4WYGMYKANGW25', @p16='False', @p17='matheus.zeitune.developer@gmail.com'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO public.\"AspNetUserClaims\" (\"ClaimType\", \"ClaimValue\", \"UserId\")
+VALUES (@p0, @p1, @p2)
+RETURNING \"Id\";
+UPDATE public.\"AspNetUsers\" SET \"AccessFailedCount\" = @p3, \"ConcurrencyStamp\" = @p4, \"Email\" = @p5, \"EmailConfirmed\" = @p6, \"IdProfileUser\" = @p7, \"LockoutEnabled\" = @p8, \"LockoutEnd\" = @p9, \"NormalizedEmail\" = @p10, \"NormalizedUserName\" = @p11, \"PasswordHash\" = @p12, \"PhoneNumber\" = @p13, \"PhoneNumberConfirmed\" = @p14, \"SecurityStamp\" = @p15, \"TwoFactorEnabled\" = @p16, \"UserName\" = @p17
+WHERE \"Id\" = @p18 AND \"ConcurrencyStamp\" = @p19;" (0723d8ff)
+2024-01-27T16:25:33.9727943-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='2214b5bc-e400-4e71-bbfa-98fff93b5dcd'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ClaimType\", a.\"ClaimValue\", a.\"UserId\"
+FROM public.\"AspNetUserClaims\" AS a
+WHERE a.\"UserId\" = @__user_Id_0" (0723d8ff)
+2024-01-27T16:25:33.9790641-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='2214b5bc-e400-4e71-bbfa-98fff93b5dcd'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM public.\"AspNetUserRoles\" AS a
+INNER JOIN public.\"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @__userId_0" (0723d8ff)
+2024-01-27T16:25:33.9800973-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2024-01-27T16:25:33.9848158-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='MATHEUS.ZEITUNE.DEVELOPER@GMAIL.COM'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"AccessFailedCount\", a.\"ConcurrencyStamp\", a.\"Email\", a.\"EmailConfirmed\", a.\"IdProfileUser\", a.\"LockoutEnabled\", a.\"LockoutEnd\", a.\"NormalizedEmail\", a.\"NormalizedUserName\", a.\"PasswordHash\", a.\"PhoneNumber\", a.\"PhoneNumberConfirmed\", a.\"SecurityStamp\", a.\"TwoFactorEnabled\", a.\"UserName\"
+FROM public.\"AspNetUsers\" AS a
+WHERE a.\"NormalizedEmail\" = @__normalizedEmail_0
+LIMIT 2" (0723d8ff)
+2024-01-27T16:25:33.9900035-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='2214b5bc-e400-4e71-bbfa-98fff93b5dcd'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a.\"Id\", a.\"ClaimType\", a.\"ClaimValue\", a.\"UserId\"
+FROM public.\"AspNetUserClaims\" AS a
+WHERE a.\"UserId\" = @__user_Id_0" (0723d8ff)
+2024-01-27T16:25:33.9952940-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='2214b5bc-e400-4e71-bbfa-98fff93b5dcd'"], CommandType='Text', CommandTimeout='30']"
+""SELECT a0.\"Name\"
+FROM public.\"AspNetUserRoles\" AS a
+INNER JOIN public.\"AspNetRoles\" AS a0 ON a.\"RoleId\" = a0.\"Id\"
+WHERE a.\"UserId\" = @__userId_0" (0723d8ff)
+2024-01-27T16:25:34.0004425-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='de90e8c8-5b85-40fc-b3a0-7429a27d0ac4'"], CommandType='Text', CommandTimeout='30']"
+""SELECT p.\"Id\", p.\"BirthDate\", p.\"CreatedAt\", p.\"IdAddressUser\", p.\"LastName\", p.\"Name\", p.\"Type\", p.\"UpdatedAt\", a.\"Id\", a.\"City\", a.\"County\", a.\"CreatedAt\", a.\"District\", a.\"Latitude\", a.\"Longitude\", a.\"Street\", a.\"UpdatedAt\", a.\"ZipCode\"
+FROM public.\"ProfileUsers\" AS p
+INNER JOIN public.\"AddressUsers\" AS a ON p.\"IdAddressUser\" = a.\"Id\"
+WHERE p.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2024-01-27T16:25:34.0010175-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed action method "IHunger.WebAPI.V1.Controllers.AuthController.Register (IHunger.WebAPI)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 688.7847ms. (50a9e262)
+2024-01-27T16:25:34.0012720-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executing "OkObjectResult", writing value of type '"IHunger.WebAPI.ViewModels.Response.ResponseSuccessViewModel"'. (605b4265)
+2024-01-27T16:25:34.0018824-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed action "IHunger.WebAPI.V1.Controllers.AuthController.Register (IHunger.WebAPI)" in 759.8019ms (afa2e885)
+2024-01-27T16:25:34.0019123-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Executed endpoint '"IHunger.WebAPI.V1.Controllers.AuthController.Register (IHunger.WebAPI)"' (99874f2b)
+2024-01-27T16:25:34.0036359-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Response:
+StatusCode: 200
+X-MiniProfiler-Ids: [Redacted]
+Set-Cookie: [Redacted]
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2065
+api-supported-versions: [Redacted]
+Access-Control-Allow-Origin: [Redacted] (999214c4)
+2024-01-27T16:25:34.0038151-03:00 40000008-0006-fd00-b63f-84710c7967bb [INF] Request finished HTTP/2 POST https://localhost:44372/api/v1/auth/register application/json 362 - 200 2065 application/json;+charset=utf-8 767.2726ms (791a596a)

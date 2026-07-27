@@ -48,7 +48,7 @@ namespace IHunger.Service
 
                 if(profile == null)
                 {
-                    NotifyError("Not fround profile");
+                    NotifyError("Not found profile");
                     return await Task.FromResult<Order>(null);
                 }
 
@@ -62,7 +62,7 @@ namespace IHunger.Service
 
                 if(coupon == null)
                 {
-                    NotifyError("Not fround coupon");
+                    NotifyError("Not found coupon");
                     return await Task.FromResult<Order>(null);
                 }
 
@@ -80,7 +80,7 @@ namespace IHunger.Service
 
                 if(product == null)
                 {
-                    NotifyError("Not fround product");
+                    NotifyError("Not found product");
                     return await Task.FromResult<Order>(null);
                 }
 
@@ -149,7 +149,7 @@ namespace IHunger.Service
                     filter = PredicateBuilder.New<Order>(true);
                 }
 
-                filter = filter.And(x => x.Id == orderFilter.Id);
+                filter = filter.And(x => x.CreatedAt.Date == orderFilter.CreatedAt.Date);
             }
 
             if (!string.IsNullOrWhiteSpace(orderFilter.Order))
@@ -185,9 +185,128 @@ namespace IHunger.Service
                 .GetById(id);
         }
 
-        public Task<Order> Update(Order order)
+        public async Task<Order> Update(Order order)
         {
-            throw new NotImplementedException();
+            var orderDb = await _orderRepository
+                .GetById(order.Id);
+
+            if (orderDb == null)
+            {
+                NotifyError("Not found");
+                return await Task.FromResult<Order>(null);
+            }
+
+            orderDb.OrderStatus = order.OrderStatus;
+            orderDb.Price = order.Price;
+            orderDb.IdCoupon = order.IdCoupon;
+            orderDb.IdProfileUser = order.IdProfileUser;
+
+            _orderRepository
+                .Update(orderDb);
+
+            if (await _orderRepository.Commit())
+            {
+                return await Task.FromResult(orderDb);
+            }
+
+            NotifyError("Error updating entity");
+            return await Task.FromResult<Order>(null);
+        }
+
+        public async Task<Order> UpdateStatus(Guid id, TypeOrderStatus status)
+        {
+            var order = await _orderRepository
+                .GetById(id);
+
+            if (order == null)
+            {
+                NotifyError("Not found");
+                return await Task.FromResult<Order>(null);
+            }
+
+            order.OrderStatus = status;
+
+            _orderRepository
+                .Update(order);
+
+            if (await _orderRepository.Commit())
+            {
+                return await Task.FromResult(order);
+            }
+
+            NotifyError("Error updating order status");
+            return await Task.FromResult<Order>(null);
+        }
+
+        public async Task<Order> AddItem(Guid orderId, Item item)
+        {
+            var order = await _orderRepository
+                .GetById(orderId);
+
+            if (order == null)
+            {
+                NotifyError("Not found");
+                return await Task.FromResult<Order>(null);
+            }
+
+            var product = await _productRepository.GetById(item.IdProduct);
+
+            if (product == null)
+            {
+                NotifyError("Product not found");
+                return await Task.FromResult<Order>(null);
+            }
+
+            item.Price = product.Price * item.Quantity;
+            item.CreatedAt = DateTime.Now;
+
+            order.Items.Add(item);
+            order.Price = order.Items.Sum(x => x.Price);
+
+            _orderRepository
+                .Update(order);
+
+            if (await _orderRepository.Commit())
+            {
+                return await Task.FromResult(order);
+            }
+
+            NotifyError("Error adding item to order");
+            return await Task.FromResult<Order>(null);
+        }
+
+        public async Task<Order> RemoveItem(Guid orderId, Guid itemId)
+        {
+            var order = await _orderRepository
+                .GetById(orderId);
+
+            if (order == null)
+            {
+                NotifyError("Not found");
+                return await Task.FromResult<Order>(null);
+            }
+
+            var item = order.Items.FirstOrDefault(x => x.Id == itemId);
+
+            if (item == null)
+            {
+                NotifyError("Item not found in order");
+                return await Task.FromResult<Order>(null);
+            }
+
+            order.Items.Remove(item);
+            order.Price = order.Items.Sum(x => x.Price);
+
+            _orderRepository
+                .Update(order);
+
+            if (await _orderRepository.Commit())
+            {
+                return await Task.FromResult(order);
+            }
+
+            NotifyError("Error removing item from order");
+            return await Task.FromResult<Order>(null);
         }
 
         public async Task<Order> Delete(Guid id)

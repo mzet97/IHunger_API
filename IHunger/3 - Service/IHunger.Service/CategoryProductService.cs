@@ -118,7 +118,7 @@ namespace IHunger.Service
                     filter = PredicateBuilder.New<CategoryProduct>(true);
                 }
 
-                filter = filter.And(x => x.Id == categoryProductFilter.Id);
+                filter = filter.And(x => x.CreatedAt.Date == categoryProductFilter.CreatedAt.Date);
             }
 
             return await _categoryProductRepository
@@ -166,7 +166,7 @@ namespace IHunger.Service
                 return await Task.FromResult<CategoryProduct>(categoryProductDb);
             }
 
-            NotifyError("Error deleting entity");
+            NotifyError("Error updating entity");
             return await Task.FromResult<CategoryProduct>(null);
         }
 

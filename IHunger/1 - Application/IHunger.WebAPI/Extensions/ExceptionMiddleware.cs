@@ -1,22 +1,22 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Threading.Tasks;
+using System.Text.Json;
 
 namespace IHunger.WebAPI.Extensions
 {
     public class ExceptionMiddleware
     {
         private readonly RequestDelegate _next;
-        readonly ILogger<ExceptionMiddleware> _log;
+        private readonly ILogger<ExceptionMiddleware> _log;
+        private readonly IHostEnvironment _env;
 
-        public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> log)
+        public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> log, IHostEnvironment env)
         {
             _log = log;
             _next = next;
+            _env = env;
         }
 
         public async Task InvokeAsync(HttpContext httpContext)
@@ -27,14 +27,29 @@ namespace IHunger.WebAPI.Extensions
             }
             catch (Exception ex)
             {
-                _log.LogError(ex.Message);
-                HandleExceptionAsync(httpContext, ex);
+                _log.LogError(ex, ex.Message);
+                await HandleExceptionAsync(httpContext, ex);
             }
         }
 
-        private static void HandleExceptionAsync(HttpContext context, Exception exception)
+        private async Task HandleExceptionAsync(HttpContext context, Exception exception)
         {
-            context.Response.StatusCode = (int) HttpStatusCode.InternalServerError;
+            context.Response.ContentType = "application/json";
+            context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+
+            var response = new
+            {
+                status = context.Response.StatusCode,
+                message = _env.IsDevelopment()
+                    ? exception.Message
+                    : "An internal server error occurred.",
+                stackTrace = _env.IsDevelopment()
+                    ? exception.StackTrace
+                    : null
+            };
+
+            var jsonOptions = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
+            await context.Response.WriteAsync(JsonSerializer.Serialize(response, jsonOptions));
         }
     }
 }
